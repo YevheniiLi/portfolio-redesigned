@@ -1,0 +1,4438 @@
+diff --git a/.trash/About/About.jsx b/.trash/About/About.jsx
+deleted file mode 100644
+index 683d794..0000000
+--- a/.trash/About/About.jsx
++++ /dev/null
+@@ -1,47 +0,0 @@
+-// import css from "./About.module.scss";
+-
+-// import { motion } from "framer-motion";
+-// import { staggerContainer, slideIn } from "../../utils/motion";
+-// import { WhatDoIHelp } from "../../utils/data";
+-
+-// const About = () => {
+-//   return (
+-//     <section className={css.wrapper}>
+-//       <a className="anchor" id="experties"></a>
+-//       <div className={`paddings yPaddings flexCenter innerWidth ${css.container}`}>
+-//         <motion.div
+-//           className={css.leftSide}
+-//           variants={staggerContainer(0.25, 0.2)}
+-//           initial="hidden"
+-//           whileInView="show"
+-//           viewport={{ once: false, amount: 0.25 }}
+-//         >
+-//           <span className="primaryText">About me</span>
+-//           {WhatDoIHelp.map((paragraph, i) => (
+-//             <motion.span
+-//               className="secondaryText"
+-//               key={i}
+-//               variants={slideIn("right", "spring", 0.3 + i * 0.3, 0.7)}
+-//             >
+-//               {paragraph}
+-//             </motion.span>
+-//           ))}
+-//         </motion.div>
+-//         <div className={css.rightSide}>
+-//           <motion.img
+-//             className="about-image"
+-//             variants={{
+-//               hidden: { opacity: 0, scale: 0.85, x: 40 },
+-//               show: { opacity: 1, scale: 1, x: 0, transition: { type: "spring", duration: 1.2 } }
+-//             }}
+-//             src="./images/about.jpeg"
+-//             alt="Yevhenii Lymarenko portrait"
+-//             style={{ objectFit: "cover", borderRadius: "10%", boxShadow: "0 4px 24px rgba(40,111,108,0.12)" }}
+-//           />
+-//         </div>
+-//       </div>
+-//     </section>
+-//   );
+-// };
+-
+-// export default About;
+diff --git a/.trash/About/About.module.scss b/.trash/About/About.module.scss
+deleted file mode 100644
+index 163b4d3..0000000
+--- a/.trash/About/About.module.scss
++++ /dev/null
+@@ -1 +0,0 @@
+-    
+diff --git a/.trash/Hero/Hero.jsx b/.trash/Hero/Hero.jsx
+deleted file mode 100644
+index 14dbae6..0000000
+--- a/.trash/Hero/Hero.jsx
++++ /dev/null
+@@ -1,59 +0,0 @@
+-// /* eslint-disable react/no-unescaped-entities */
+-
+-// import css from "./Hero.module.scss";
+-// import { motion } from "framer-motion";
+-// import { fadeIn, staggerContainer } from "../../utils/motion";
+-
+-// const Hero = () => {
+-//   return (
+-//     <section className={css.wrapper}>
+-//       <motion.div
+-//         initial="hidden"
+-//         whileInView="show"
+-//         variants={staggerContainer}
+-//         viewport={{ once: true, amount: 0.25 }}
+-//         className={css.container}
+-//       >
+-//         <motion.img
+-//           variants={fadeIn("up", "tween", 0.2, 1)}
+-//           src="./images/person.jpeg"
+-//           alt="Yevhenii Lymarenko"
+-//           className={css["hero-photo"]}
+-//         />
+-//         <motion.h1
+-//           variants={fadeIn("up", "tween", 0.3, 1)}
+-//           className={css.heroTitle}
+-//         >
+-//           Yevhenii Lymarenko
+-//         </motion.h1>
+-//         <motion.div
+-//           variants={fadeIn("up", "tween", 0.4, 1)}
+-//           className={css.heroSubtitle}
+-//         >
+-//           Front-End Developer
+-//         </motion.div>
+-//         <motion.div
+-//           variants={fadeIn("up", "tween", 0.5, 1)}
+-//           className={css.heroActions}
+-//         >
+-//           <a
+-//             className={css.heroCv}
+-//             href="https://drive.google.com/uc?export=download&id=18YoAw962WatK2moG4QQr7CeGAJySSPGu"
+-//             download
+-//           >
+-//           </a>
+-//           <div className={css.heroSocials}>
+-//             <a href="https://www.linkedin.com/in/lymarenko/" target="_blank" rel="noopener noreferrer">
+-//               <img src="./images/linkedin.png" alt="LinkedIn" width="56" height="56" />
+-//             </a>
+-//             <a href="https://github.com/YevheniiLi" target="_blank" rel="noopener noreferrer">
+-//               <img src="./images/github.png" alt="GitHub" width="56" height="56" />
+-//             </a>
+-//           </div>
+-//         </motion.div>
+-//       </motion.div>
+-//     </section>
+-//   );
+-// };
+-
+-// export default Hero;
+diff --git a/.trash/Hero/Hero.module.scss b/.trash/Hero/Hero.module.scss
+deleted file mode 100644
+index 1dfd476..0000000
+--- a/.trash/Hero/Hero.module.scss
++++ /dev/null
+@@ -1,80 +0,0 @@
+-
+-// .hero-title {
+-//   font-family: "Agbalumo", sans-serif;
+-//   font-size: 2.8rem;
+-//   text-align: center;
+-//   font-weight: 700;
+-//   background: linear-gradient(90deg, #00bfff, #6b8e23);
+-//   background-clip: text;
+-//   -webkit-background-clip: text;
+-//   color: transparent;
+-//   -webkit-text-fill-color: transparent;
+-//   margin-top: 1.2rem;
+-//   margin-bottom: 0.5rem;
+-// }
+-
+-// .hero-subtitle {
+-//   font-size: 1.2rem;
+-//   color: #444;
+-//   text-align: center;
+-//   margin-bottom: 1.5rem;
+-// }
+-
+-// .hero-actions {
+-//   display: flex;
+-//   flex-direction: row;
+-//   gap: 1.5rem;
+-//   justify-content: center;
+-//   align-items: center;
+-//   margin-top: 1.5rem;
+-//   flex-wrap: wrap;
+-// }
+-
+-// .hero-cv {
+-//   padding: 0.7rem 1.6rem;
+-//   background: linear-gradient(90deg, #6b8e23, #00bfff);
+-//   color: #fff;
+-//   font-weight: 600;
+-//   border: none;
+-//   border-radius: 30px;
+-//   font-size: 1rem;
+-//   cursor: pointer;
+-//   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+-//   transition: background 0.2s, box-shadow 0.2s;
+-// }
+-// .hero-cv:hover {
+-//   background: linear-gradient(90deg, #00bfff, #6b8e23);
+-//   box-shadow: 0 4px 16px rgba(0,0,0,0.16);
+-// }
+-
+-// .hero-socials {
+-//   display: flex;
+-//   gap: 2.5rem;
+-// }
+-// .hero-socials a {
+-//   color: #00bfff;
+-//   font-size: 1.5rem;
+-//   transition: color 0.2s, transform 0.2s;
+-// }
+-// .hero-socials a:hover {
+-//   color: #6b8e23;
+-//   transform: scale(1.15);
+-// }
+-
+-// @media (max-width: 600px) {
+-//   .container {
+-//     max-width: 98vw;
+-//     gap: 1.5rem;
+-//   }
+-//   .hero-title {
+-//     font-size: 2rem;
+-//   }
+-//   .hero-photo {
+-//     width: 90px;
+-//     height: 90px;
+-//   }
+-//   .hero-actions {
+-//     gap: 1rem;
+-//     flex-direction: column;
+-//   }
+-// }
+\ No newline at end of file
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+new file mode 100644
+index 0000000..b06792e
+--- /dev/null
++++ b/CHANGELOG.md
+@@ -0,0 +1,165 @@
++# Portfolio Redesign — Changelog
++
++Complete redesign of yevheniili.netlify.app: layout/UX, then a full
++consistency pass, then a production-readiness pass (performance,
++accessibility, SEO). No project content, testimonials, or the
++recommendation letter were invented — placeholders are clearly marked
++and documented below.
++
++---
++
++## Modified files
++
++- `index.html` — real title/meta description, canonical URL, Open Graph,
++  Twitter Card, JSON-LD `Person` schema, branded favicons, `theme-color`,
++  removed dead font links, added the font provider's recommended `preconnect`.
++- `package.json` / `package-lock.json` — removed unused dependencies (see below).
++- `src/App.jsx` — added skip-to-content link and a real `<main>` landmark.
++- `src/styles/contants.scss` — added shared design tokens (radius, shadow,
++  border color, transition, AA-safe text colors).
++- `src/styles/global.scss` — fixed a real bug (overlapping media queries
++  were shrinking section padding at larger viewports instead of growing
++  it); removed 7 dead/unused utility classes.
++- `src/styles/app.module.scss` — skip-link styling.
++- `src/utils/data.js` — restructured content (see below); removed dead
++  `projectExperience` export and its unused icon imports.
++- `src/hooks/useOutsideAlerter.jsx` — was an empty stub; implemented.
++- `src/components/Header/*` — full redesign, real mobile navigation.
++- `src/components/MainSection/*` — full redesign (Hero).
++- `src/components/Work/*` — full redesign (Experience).
++- `src/components/Portfolio/*` — full redesign (Projects).
++- `src/components/People/*` — full redesign (Testimonials).
++- `src/components/Footer/*` — full redesign (Contact).
++
++## New files
++
++- `public/favicon.svg`, `public/apple-touch-icon.png`, `public/favicon-32x32.png`
++  — branded "YL" monogram favicon set, replacing the generic placeholder icon.
++- `public/robots.txt`, `public/sitemap.xml` — basic SEO crawl support.
++- `public/_headers` — Netlify security headers (`X-Content-Type-Options`,
++  `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy`). No CSP —
++  see "Known limitations" below.
++
++## Deleted files
++
++- `src/utils/motion.js` — framer-motion variants, orphaned once every
++  section was moved to CSS-based transitions.
++- `src/assets/react.svg`, `public/vite.svg`, `public/images/vite.svg`,
++  `public/images/electron.svg` — default Vite scaffold assets and the old
++  placeholder favicon, confirmed unreferenced anywhere in the codebase.
++- `.trash/` (entire directory: `About/About.jsx`, `About/About.module.scss`,
++  `Hero/Hero.jsx`, `Hero/Hero.module.scss`) — an old, unused "About" page
++  and a superseded "Hero" component, found tracked in git at the repo
++  root during the final pre-export review. Not excluded by `.gitignore`,
++  not imported anywhere — genuine dead code that had been sitting in the
++  repository since before this redesign started.
++
++## Removed dependencies
++
++`framer-motion`, `react-slick`, `@emailjs/browser`, `emailjs-com`,
++`@fortawesome/free-solid-svg-icons`, `@fortawesome/react-fontawesome` —
++all confirmed unused by grepping the entire `src` tree before removal.
++No new dependencies were added anywhere in this redesign.
++
++---
++
++## Major UI/UX improvements
++
++- **Fixed a critical bug:** the entire header was `display: none` below
++  600px — there was no way to navigate the site on mobile at all. Replaced
++  with a real, accessible hamburger menu.
++- **Fixed a functional bug:** the "WhatsApp" contact link was actually a
++  `tel:` link (opens the phone dialer, not WhatsApp) — now a correct
++  `wa.me` link with the same number.
++- **Fixed a content bug:** two of six project cards linked to the wrong
++  repository (one pointed to a template author's unrelated repo).
++- Removed everything that read as "tutorial/template": decorative cursive
++  fonts (Agbalumo/Pacifico), a 4-color animated rainbow CV button, a
++  glassmorphism floating hero card, a rainbow gradient footer divider, an
++  infinitely-pulsing "online" status dot.
++- Projects now show real screenshots (previously unused, generic SVG
++  icons were shown instead) at a consistent 16:9 ratio across all cards.
++- Testimonials rebuilt as a static, accessible responsive grid (no
++  carousel), with a distinct featured card for the recommendation letter.
++- Hero copy restructured so specialization, years of experience, and core
++  tech stack are each independently scannable within the first few seconds
++  (per your recruiter-perspective feedback).
++- Established one consistent visual system across every section: card
++  radius, shadow, hover behavior, icon sizing, section spacing, and
++  heading hierarchy (h1 → h2 → h3, no skipped levels) are now uniform
++  instead of each component inventing its own values.
++
++## Accessibility improvements
++
++- Skip-to-content link + proper `<main>`/`<header>`/`<footer>` landmarks
++  (previously flat, unlabeled `<div>`s).
++- Fixed icon-only links with no accessible name (sound/menu toggles,
++  Footer contact icons) — all now have real accessible names via visible
++  text inside the link or `aria-label`.
++- Fixed 2 genuine WCAG AA contrast failures (Work's tenure text ~3.5:1,
++  Footer's credit text ~2.8:1) — both now use a shared `$text-muted`
++  token at ~7.5:1.
++- Full keyboard support for the mobile menu (closes on outside click,
++  on link selection, proper `aria-expanded`/`aria-controls`).
++- Consistent focus-visible states on every interactive element.
++
++## Performance optimizations
++
++- Removed `react-slick` (and its 2 CDN CSS files) and `framer-motion`
++  entirely — cut the production JS bundle from ~321KB to ~159KB
++  (gzip: ~102KB → ~51KB).
++- Removed 2 further unused dependencies (`@emailjs/*` × 2 aren't used
++  anywhere in `src`) and 2 unused FontAwesome packages.
++- Fixed the Hero photo (your likely Largest Contentful Paint element)
++  being marked `loading="lazy"`, which was actively delaying it.
++- Added explicit `width`/`height` to every image to prevent layout shift;
++  added `loading="lazy"` correctly to below-the-fold images only.
++- Removed ~150 lines of dead/duplicated CSS left over from earlier
++  iterations (an entire unused `<table>` block duplicated twice, a
++  `.progressbar`/`.circle`/`.line` timeline system, several utility
++  classes never referenced anywhere).
++- Deliberately did **not** add route-based code splitting — this is a
++  single-page site with an already-small bundle; splitting further would
++  add request overhead with no measurable benefit.
++
++## SEO improvements
++
++- Went from `<title>YevheniiLi</title>` with zero other metadata to a
++  full set: descriptive title, meta description, canonical URL, Open
++  Graph tags, Twitter Card, JSON-LD `Person` structured data,
++  `robots.txt`, and `sitemap.xml`.
++- Branded favicon set (SVG + PNG fallbacks + Apple touch icon) replacing
++  a generic placeholder icon.
++
++---
++
++## Known limitations / recommendations before you deploy
++
++These need real content or a live environment to finish — I did not
++invent or guess at any of them:
++
++1. **OG/Twitter image** currently reuses your 280×280 profile photo.
++   A dedicated 1200×630 banner would render much better when shared.
++2. **Live demo URLs** for the three projects are still `null` in
++   `data.js` — add them and the "Live Demo" button appears automatically.
++3. **Real testimonials + the recommendation letter** are still clearly-
++   marked placeholders in `data.js` (`testimonials`, `featuredRecommendation`).
++   Old real testimonial photos (`joseph.jpeg`, `obianna.png`, `yulia.jpeg`)
++   and other unused images (`about.jpeg`, `cv.png`, `certificate.png`)
++   were intentionally **kept** in `public/images/` in case you reuse them.
++4. **Verify the WhatsApp number and Telegram handle** in the Footer are
++   still current — only the link *format* was fixed, not the underlying
++   contact details.
++5. **Content-Security-Policy** was intentionally left out of
++   `public/_headers` — the Header uses one inline `style` attribute for
++   its scroll-shadow effect, and a CSP strict enough to matter could
++   block that without a live environment to test against.
++6. **Run a real Lighthouse pass once deployed** — all performance/SEO/
++   accessibility scores in this project were estimated from code review,
++   not measured.
++
++---
++
++**Status: production-ready**, pending the real content listed above and
++a live Lighthouse check. Build (`npm run build`) and lint (`eslint src`)
++both pass cleanly as of this export.
+diff --git a/index.html b/index.html
+index ac0fdb9..77141d9 100644
+--- a/index.html
++++ b/index.html
+@@ -2,25 +2,61 @@
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
+-    <link rel="icon" type="image/svg+xml" href="/images/electron.svg"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+-    <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css" />
+-    <link rel="preconnect" href="https://fonts.googleapis.com">
+-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+-<link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+-    <link
+-      rel="stylesheet"
+-      type="text/css"
+-      charset="UTF-8"
+-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
++    <meta name="theme-color" content="#0D2F3F" />
++
++    <title>Yevhenii Lymarenko | Front-End Developer (React &amp; TypeScript)</title>
++    <meta
++      name="description"
++      content="Yevhenii Lymarenko is a Front-End Developer with 2+ years building production React applications. Portfolio, projects, work experience and contact."
++    />
++    <link rel="canonical" href="https://yevheniili.netlify.app/" />
++
++    <!-- Open Graph -->
++    <meta property="og:type" content="website" />
++    <meta property="og:title" content="Yevhenii Lymarenko | Front-End Developer" />
++    <meta
++      property="og:description"
++      content="Front-End Developer with 2+ years building production React applications. See my projects, experience and how to get in touch."
+     />
+-    <link
+-      rel="stylesheet"
+-      type="text/css"
+-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
++    <meta property="og:url" content="https://yevheniili.netlify.app/" />
++    <meta property="og:image" content="https://yevheniili.netlify.app/images/person.jpg" />
++    <meta property="og:image:width" content="280" />
++    <meta property="og:image:height" content="280" />
++    <meta property="og:locale" content="en_US" />
++
++    <!-- Twitter -->
++    <meta name="twitter:card" content="summary" />
++    <meta name="twitter:title" content="Yevhenii Lymarenko | Front-End Developer" />
++    <meta
++      name="twitter:description"
++      content="Front-End Developer with 2+ years building production React applications."
+     />
+-    <title>YevheniiLi</title>
++    <meta name="twitter:image" content="https://yevheniili.netlify.app/images/person.jpg" />
++
++    <!-- Favicons -->
++    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
++    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
++    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
++
++    <!-- Font: only origin actually needed, per the provider's own embed instructions -->
++    <link rel="preconnect" href="https://stijndv.com" />
++    <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css" />
++
++    <script type="application/ld+json">
++      {
++        "@context": "https://schema.org",
++        "@type": "Person",
++        "name": "Yevhenii Lymarenko",
++        "jobTitle": "Front-End Developer",
++        "url": "https://yevheniili.netlify.app/",
++        "sameAs": [
++          "https://github.com/YevheniiLi",
++          "https://www.linkedin.com/in/lymarenko/"
++        ],
++        "knowsAbout": ["React", "TypeScript", "JavaScript", "Angular", "Redux", "Node.js"]
++      }
++    </script>
+   </head>
+   <body>
+     <div id="root"></div>
+diff --git a/package-lock.json b/package-lock.json
+index ca6ccce..dae8d41 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -8,16 +8,10 @@
+       "name": "portfolio",
+       "version": "0.0.0",
+       "dependencies": {
+-        "@emailjs/browser": "^3.11.0",
+-        "@fortawesome/free-solid-svg-icons": "^6.4.2",
+-        "@fortawesome/react-fontawesome": "^0.2.0",
+-        "emailjs-com": "^3.2.0",
+-        "framer-motion": "^10.16.4",
+         "prop-types": "^15.8.1",
+         "react": "^18.2.0",
+         "react-dom": "^18.2.0",
+         "react-icons": "^4.11.0",
+-        "react-slick": "^0.29.0",
+         "sass": "^1.69.3"
+       },
+       "devDependencies": {
+@@ -380,29 +374,6 @@
+         "node": ">=6.9.0"
+       }
+     },
+-    "node_modules/@emailjs/browser": {
+-      "version": "3.11.0",
+-      "resolved": "https://registry.npmjs.org/@emailjs/browser/-/browser-3.11.0.tgz",
+-      "integrity": "sha512-RkY3FKZ3fPdK++OeF46mRTFpmmQWCHUVHZH209P3NE4D5sg2Atg7S2wa3gw5062Gl4clt4Wn5SyC4WhlVZC5pA==",
+-      "engines": {
+-        "node": ">=14.0.0"
+-      }
+-    },
+-    "node_modules/@emotion/is-prop-valid": {
+-      "version": "0.8.8",
+-      "resolved": "https://registry.npmjs.org/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz",
+-      "integrity": "sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==",
+-      "optional": true,
+-      "dependencies": {
+-        "@emotion/memoize": "0.7.4"
+-      }
+-    },
+-    "node_modules/@emotion/memoize": {
+-      "version": "0.7.4",
+-      "resolved": "https://registry.npmjs.org/@emotion/memoize/-/memoize-0.7.4.tgz",
+-      "integrity": "sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==",
+-      "optional": true
+-    },
+     "node_modules/@esbuild/android-arm": {
+       "version": "0.18.20",
+       "resolved": "https://registry.npmjs.org/@esbuild/android-arm/-/android-arm-0.18.20.tgz",
+@@ -826,52 +797,6 @@
+         "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
+       }
+     },
+-    "node_modules/@fortawesome/fontawesome-common-types": {
+-      "version": "6.4.2",
+-      "resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.4.2.tgz",
+-      "integrity": "sha512-1DgP7f+XQIJbLFCTX1V2QnxVmpLdKdzzo2k8EmvDOePfchaIGQ9eCHj2up3/jNEbZuBqel5OxiaOJf37TWauRA==",
+-      "hasInstallScript": true,
+-      "engines": {
+-        "node": ">=6"
+-      }
+-    },
+-    "node_modules/@fortawesome/fontawesome-svg-core": {
+-      "version": "6.4.2",
+-      "resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.4.2.tgz",
+-      "integrity": "sha512-gjYDSKv3TrM2sLTOKBc5rH9ckje8Wrwgx1CxAPbN5N3Fm4prfi7NsJVWd1jklp7i5uSCVwhZS5qlhMXqLrpAIg==",
+-      "hasInstallScript": true,
+-      "peer": true,
+-      "dependencies": {
+-        "@fortawesome/fontawesome-common-types": "6.4.2"
+-      },
+-      "engines": {
+-        "node": ">=6"
+-      }
+-    },
+-    "node_modules/@fortawesome/free-solid-svg-icons": {
+-      "version": "6.4.2",
+-      "resolved": "https://registry.npmjs.org/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-6.4.2.tgz",
+-      "integrity": "sha512-sYwXurXUEQS32fZz9hVCUUv/xu49PEJEyUOsA51l6PU/qVgfbTb2glsTEaJngVVT8VqBATRIdh7XVgV1JF1LkA==",
+-      "hasInstallScript": true,
+-      "dependencies": {
+-        "@fortawesome/fontawesome-common-types": "6.4.2"
+-      },
+-      "engines": {
+-        "node": ">=6"
+-      }
+-    },
+-    "node_modules/@fortawesome/react-fontawesome": {
+-      "version": "0.2.0",
+-      "resolved": "https://registry.npmjs.org/@fortawesome/react-fontawesome/-/react-fontawesome-0.2.0.tgz",
+-      "integrity": "sha512-uHg75Rb/XORTtVt7OS9WoK8uM276Ufi7gCzshVWkUJbHhh3svsUUeqXerrM96Wm7fRiDzfKRwSoahhMIkGAYHw==",
+-      "dependencies": {
+-        "prop-types": "^15.8.1"
+-      },
+-      "peerDependencies": {
+-        "@fortawesome/fontawesome-svg-core": "~1 || ~6",
+-        "react": ">=16.3"
+-      }
+-    },
+     "node_modules/@humanwhocodes/config-array": {
+       "version": "0.11.11",
+       "resolved": "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.11.tgz",
+@@ -1439,11 +1364,6 @@
+         "node": ">= 6"
+       }
+     },
+-    "node_modules/classnames": {
+-      "version": "2.3.2",
+-      "resolved": "https://registry.npmjs.org/classnames/-/classnames-2.3.2.tgz",
+-      "integrity": "sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw=="
+-    },
+     "node_modules/color-convert": {
+       "version": "1.9.3",
+       "resolved": "https://registry.npmjs.org/color-convert/-/color-convert-1.9.3.tgz",
+@@ -1563,20 +1483,6 @@
+       "integrity": "sha512-Q0umzPJjfBrrj8unkONTgbKQXzXRrH7sVV7D9ea2yBV3Oaogz991yhbpfvo2LMNkJItmruXTEzVpP9cp7vaIiQ==",
+       "dev": true
+     },
+-    "node_modules/emailjs-com": {
+-      "version": "3.2.0",
+-      "resolved": "https://registry.npmjs.org/emailjs-com/-/emailjs-com-3.2.0.tgz",
+-      "integrity": "sha512-Prbz3E1usiAwGjMNYRv6EsJ5c373cX7/AGnZQwOfrpNJrygQJ15+E9OOq4pU8yC977Z5xMetRfc3WmDX6RcjAA==",
+-      "deprecated": "The SDK name changed to @emailjs/browser",
+-      "engines": {
+-        "node": ">=12.0.0"
+-      }
+-    },
+-    "node_modules/enquire.js": {
+-      "version": "2.1.6",
+-      "resolved": "https://registry.npmjs.org/enquire.js/-/enquire.js-2.1.6.tgz",
+-      "integrity": "sha512-/KujNpO+PT63F7Hlpu4h3pE3TokKRHN26JYmQpPyjkRD/N57R7bPDNojMXdi7uveAKjYB7yQnartCxZnFWr0Xw=="
+-    },
+     "node_modules/es-abstract": {
+       "version": "1.22.2",
+       "resolved": "https://registry.npmjs.org/es-abstract/-/es-abstract-1.22.2.tgz",
+@@ -2143,29 +2049,6 @@
+         "is-callable": "^1.1.3"
+       }
+     },
+-    "node_modules/framer-motion": {
+-      "version": "10.16.4",
+-      "resolved": "https://registry.npmjs.org/framer-motion/-/framer-motion-10.16.4.tgz",
+-      "integrity": "sha512-p9V9nGomS3m6/CALXqv6nFGMuFOxbWsmaOrdmhyQimMIlLl3LC7h7l86wge/Js/8cRu5ktutS/zlzgR7eBOtFA==",
+-      "dependencies": {
+-        "tslib": "^2.4.0"
+-      },
+-      "optionalDependencies": {
+-        "@emotion/is-prop-valid": "^0.8.2"
+-      },
+-      "peerDependencies": {
+-        "react": "^18.0.0",
+-        "react-dom": "^18.0.0"
+-      },
+-      "peerDependenciesMeta": {
+-        "react": {
+-          "optional": true
+-        },
+-        "react-dom": {
+-          "optional": true
+-        }
+-      }
+-    },
+     "node_modules/fs.realpath": {
+       "version": "1.0.0",
+       "resolved": "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz",
+@@ -2876,14 +2759,6 @@
+       "integrity": "sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==",
+       "dev": true
+     },
+-    "node_modules/json2mq": {
+-      "version": "0.2.0",
+-      "resolved": "https://registry.npmjs.org/json2mq/-/json2mq-0.2.0.tgz",
+-      "integrity": "sha512-SzoRg7ux5DWTII9J2qkrZrqV1gt+rTaoufMxEzXbS26Uid0NwaJd123HcoB80TgubEppxxIGdNxCx50fEoEWQA==",
+-      "dependencies": {
+-        "string-convert": "^0.2.0"
+-      }
+-    },
+     "node_modules/json5": {
+       "version": "2.2.3",
+       "resolved": "https://registry.npmjs.org/json5/-/json5-2.2.3.tgz",
+@@ -2948,11 +2823,6 @@
+         "url": "https://github.com/sponsors/sindresorhus"
+       }
+     },
+-    "node_modules/lodash.debounce": {
+-      "version": "4.0.8",
+-      "resolved": "https://registry.npmjs.org/lodash.debounce/-/lodash.debounce-4.0.8.tgz",
+-      "integrity": "sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow=="
+-    },
+     "node_modules/lodash.merge": {
+       "version": "4.6.2",
+       "resolved": "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz",
+@@ -3379,22 +3249,6 @@
+         "node": ">=0.10.0"
+       }
+     },
+-    "node_modules/react-slick": {
+-      "version": "0.29.0",
+-      "resolved": "https://registry.npmjs.org/react-slick/-/react-slick-0.29.0.tgz",
+-      "integrity": "sha512-TGdOKE+ZkJHHeC4aaoH85m8RnFyWqdqRfAGkhd6dirmATXMZWAxOpTLmw2Ll/jPTQ3eEG7ercFr/sbzdeYCJXA==",
+-      "dependencies": {
+-        "classnames": "^2.2.5",
+-        "enquire.js": "^2.1.6",
+-        "json2mq": "^0.2.0",
+-        "lodash.debounce": "^4.0.8",
+-        "resize-observer-polyfill": "^1.5.0"
+-      },
+-      "peerDependencies": {
+-        "react": "^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0",
+-        "react-dom": "^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0"
+-      }
+-    },
+     "node_modules/readdirp": {
+       "version": "3.6.0",
+       "resolved": "https://registry.npmjs.org/readdirp/-/readdirp-3.6.0.tgz",
+@@ -3443,11 +3297,6 @@
+         "url": "https://github.com/sponsors/ljharb"
+       }
+     },
+-    "node_modules/resize-observer-polyfill": {
+-      "version": "1.5.1",
+-      "resolved": "https://registry.npmjs.org/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz",
+-      "integrity": "sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg=="
+-    },
+     "node_modules/resolve": {
+       "version": "2.0.0-next.5",
+       "resolved": "https://registry.npmjs.org/resolve/-/resolve-2.0.0-next.5.tgz",
+@@ -3660,11 +3509,6 @@
+         "node": ">=0.10.0"
+       }
+     },
+-    "node_modules/string-convert": {
+-      "version": "0.2.1",
+-      "resolved": "https://registry.npmjs.org/string-convert/-/string-convert-0.2.1.tgz",
+-      "integrity": "sha512-u/1tdPl4yQnPBjnVrmdLo9gtuLvELKsAoRapekWggdiQNvvvum+jYF329d84NAa660KQw7pB2n36KrIKVoXa3A=="
+-    },
+     "node_modules/string.prototype.matchall": {
+       "version": "4.0.10",
+       "resolved": "https://registry.npmjs.org/string.prototype.matchall/-/string.prototype.matchall-4.0.10.tgz",
+@@ -3804,11 +3648,6 @@
+         "node": ">=8.0"
+       }
+     },
+-    "node_modules/tslib": {
+-      "version": "2.6.2",
+-      "resolved": "https://registry.npmjs.org/tslib/-/tslib-2.6.2.tgz",
+-      "integrity": "sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q=="
+-    },
+     "node_modules/type-check": {
+       "version": "0.4.0",
+       "resolved": "https://registry.npmjs.org/type-check/-/type-check-0.4.0.tgz",
+diff --git a/package.json b/package.json
+index c25c664..8c19f8b 100644
+--- a/package.json
++++ b/package.json
+@@ -12,16 +12,10 @@
+     "preview": "vite preview"
+   },
+   "dependencies": {
+-    "@emailjs/browser": "^3.11.0",
+-    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+-    "@fortawesome/react-fontawesome": "^0.2.0",
+-    "emailjs-com": "^3.2.0",
+-    "framer-motion": "^10.16.4",
+     "prop-types": "^15.8.1",
+     "react": "^18.2.0",
+     "react-dom": "^18.2.0",
+     "react-icons": "^4.11.0",
+-    "react-slick": "^0.29.0",
+     "sass": "^1.69.3"
+   },
+   "devDependencies": {
+diff --git a/public/_headers b/public/_headers
+new file mode 100644
+index 0000000..693f3ea
+--- /dev/null
++++ b/public/_headers
+@@ -0,0 +1,5 @@
++/*
++  X-Content-Type-Options: nosniff
++  X-Frame-Options: DENY
++  Referrer-Policy: strict-origin-when-cross-origin
++  Permissions-Policy: camera=(), microphone=(), geolocation=()
+diff --git a/public/apple-touch-icon.png b/public/apple-touch-icon.png
+new file mode 100644
+index 0000000..a38bbe7
+Binary files /dev/null and b/public/apple-touch-icon.png differ
+diff --git a/public/favicon-32x32.png b/public/favicon-32x32.png
+new file mode 100644
+index 0000000..0d3b7e3
+Binary files /dev/null and b/public/favicon-32x32.png differ
+diff --git a/public/favicon.svg b/public/favicon.svg
+new file mode 100644
+index 0000000..a40bde2
+--- /dev/null
++++ b/public/favicon.svg
+@@ -0,0 +1,5 @@
++<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
++  <rect width="64" height="64" rx="14" fill="#0D2F3F"/>
++  <text x="32" y="42" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700"
++        fill="#ffffff" text-anchor="middle">YL</text>
++</svg>
+diff --git a/public/images/electron.svg b/public/images/electron.svg
+deleted file mode 100644
+index 081b0bf..0000000
+--- a/public/images/electron.svg
++++ /dev/null
+@@ -1 +0,0 @@
+-<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" fill="blue"><path d="M86.76 255a9.89 9.89 0 004.87-1.29 9.82 9.82 0 003.65-13.43c-16.46-28.56-17.81-52.12-7.45-70 14.26-24.57 53.61-33.65 105.27-24.29a9.86 9.86 0 0011.45-7.9 9.84 9.84 0 00-7.93-11.44c-29.19-5.28-56-5.18-77.39.3-22.3 5.71-39 17.28-48.45 33.48-14 24.19-12.7 54.73 7.42 89.62a9.85 9.85 0 008.56 4.95zM361.61 143.73c32.24.42 52.61 9.31 62.79 26.86 14.21 24.48 2.52 62.81-31.27 102.52a9.82 9.82 0 007.51 16.18 9.88 9.88 0 007.52-3.46c19.12-22.47 32.35-45.54 38.25-66.71 6.14-22 4.43-42.21-5-58.38-13.8-23.78-40.13-36.15-79.59-36.67h-.14a9.83 9.83 0 00-.12 19.66zM326.47 414.89a9.88 9.88 0 00-13.5 3.35c-16.41 27.15-36.57 42.1-56.77 42.1-28.49 0-56-29.31-73.73-78.42a9.87 9.87 0 00-12.59-5.92 9.83 9.83 0 00-6 12.58c10 27.77 23.47 50.75 39 66.46 16.11 16.34 34.55 25 53.32 25 27.38 0 53.54-18.33 73.65-51.61a9.81 9.81 0 00-3.38-13.5zM431.7 338.54a32.14 32.14 0 00-29.9 44.33c-41.8 19.5-119.8 4.79-191.87-36.62-32.91-18.9-62.16-41.86-84.6-66.39a9.9 9.9 0 00-13.91-.65 9.8 9.8 0 00-.65 13.9c23.79 26 54.68 50.28 89.33 70.18 40.28 23.13 82.27 38.63 121.43 44.81a225.54 225.54 0 0035 2.91c23.12 0 43-4.3 58.51-12.79a32.2 32.2 0 1016.7-59.68zm0 44.66a12.6 12.6 0 01-7.82-2.72 10 10 0 00-2.2-2.21 12.61 12.61 0 1110 4.93z"/><path d="M82.09 338.59c.57-21.26 12.41-47 33.68-73.16 23.19-28.45 56.69-56 94.34-77.65 33.25-19.1 65.2-31.9 98.07-38.91a9.83 9.83 0 10-4.12-19.22c-34.85 7.43-68.78 21-103.79 41.09C116.09 219.09 59.9 289.88 62.46 343.9a32.32 32.32 0 1019.63-5.31zM80.3 383.2a12.5 12.5 0 1112.59-12.5 12.56 12.56 0 01-12.59 12.5z"/><path d="M256.2 96.32a32.23 32.23 0 0026.53-13.81c17.89 11.69 34 35 45.81 66.12 13 34.39 19.84 75.38 19.84 118.54 0 37.18-5.19 72.35-15 103.6a9.72 9.72 0 00.66 7.49 9.82 9.82 0 005.8 4.84 9.89 9.89 0 0012.34-6.44c10.42-33.14 15.93-70.34 15.93-109.49 0-47.17-7.77-91.77-22.47-129-14.41-36.48-34.13-62.4-57.14-75.16a32.3 32.3 0 10-32.3 33.31zm0-44.66a12.5 12.5 0 11-12.59 12.5 12.56 12.56 0 0112.59-12.5zM251 243.36a24.35 24.35 0 005.16 48.16 24.68 24.68 0 005.16-.55A24.36 24.36 0 10251 243.36z"/></svg>
+\ No newline at end of file
+diff --git a/public/images/vite.svg b/public/images/vite.svg
+deleted file mode 100644
+index e7b8dfb..0000000
+--- a/public/images/vite.svg
++++ /dev/null
+@@ -1 +0,0 @@
+-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" width="31.88" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 257"><defs><linearGradient id="IconifyId1813088fe1fbc01fb466" x1="-.828%" x2="57.636%" y1="7.652%" y2="78.411%"><stop offset="0%" stop-color="#41D1FF"></stop><stop offset="100%" stop-color="#BD34FE"></stop></linearGradient><linearGradient id="IconifyId1813088fe1fbc01fb467" x1="43.376%" x2="50.316%" y1="2.242%" y2="89.03%"><stop offset="0%" stop-color="#FFEA83"></stop><stop offset="8.333%" stop-color="#FFDD35"></stop><stop offset="100%" stop-color="#FFA800"></stop></linearGradient></defs><path fill="url(#IconifyId1813088fe1fbc01fb466)" d="M255.153 37.938L134.897 252.976c-2.483 4.44-8.862 4.466-11.382.048L.875 37.958c-2.746-4.814 1.371-10.646 6.827-9.67l120.385 21.517a6.537 6.537 0 0 0 2.322-.004l117.867-21.483c5.438-.991 9.574 4.796 6.877 9.62Z"></path><path fill="url(#IconifyId1813088fe1fbc01fb467)" d="M185.432.063L96.44 17.501a3.268 3.268 0 0 0-2.634 3.014l-5.474 92.456a3.268 3.268 0 0 0 3.997 3.378l24.777-5.718c2.318-.535 4.413 1.507 3.936 3.838l-7.361 36.047c-.495 2.426 1.782 4.5 4.151 3.78l15.304-4.649c2.372-.72 4.652 1.36 4.15 3.788l-11.698 56.621c-.732 3.542 3.979 5.473 5.943 2.437l1.313-2.028l72.516-144.72c1.215-2.423-.88-5.186-3.54-4.672l-25.505 4.922c-2.396.462-4.435-1.77-3.759-4.114l16.646-57.705c.677-2.35-1.37-4.583-3.769-4.113Z"></path></svg>
+\ No newline at end of file
+diff --git a/public/robots.txt b/public/robots.txt
+new file mode 100644
+index 0000000..6afcd82
+--- /dev/null
++++ b/public/robots.txt
+@@ -0,0 +1,4 @@
++User-agent: *
++Allow: /
++
++Sitemap: https://yevheniili.netlify.app/sitemap.xml
+diff --git a/public/sitemap.xml b/public/sitemap.xml
+new file mode 100644
+index 0000000..2d43c8f
+--- /dev/null
++++ b/public/sitemap.xml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
++  <url>
++    <loc>https://yevheniili.netlify.app/</loc>
++    <changefreq>monthly</changefreq>
++    <priority>1.0</priority>
++  </url>
++</urlset>
+diff --git a/src/App.jsx b/src/App.jsx
+index 846b874..3a2875f 100644
+--- a/src/App.jsx
++++ b/src/App.jsx
+@@ -7,14 +7,21 @@ import css from './styles/app.module.scss';
+ import MainSection from "./components/MainSection/MainSection";
+ 
+ const App = () => {
+-  return <div className={`bg-primary ${css.container}`}>
+-    <Header /> 
+-    <MainSection />
+-    <Work />
+-    <Portfolio />
+-    <People />
+-    <Footer />
+-  </div>;
++  return (
++    <div className={`bg-primary ${css.container}`}>
++      <a href="#main-content" className={css.skipLink}>
++        Skip to main content
++      </a>
++      <Header />
++      <main id="main-content">
++        <MainSection />
++        <Work />
++        <Portfolio />
++        <People />
++      </main>
++      <Footer />
++    </div>
++  );
+ };
+ 
+ export default App;
+diff --git a/src/assets/react.svg b/src/assets/react.svg
+deleted file mode 100644
+index 6c87de9..0000000
+--- a/src/assets/react.svg
++++ /dev/null
+@@ -1 +0,0 @@
+-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" width="35.93" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 228"><path fill="#00D8FF" d="M210.483 73.824a171.49 171.49 0 0 0-8.24-2.597c.465-1.9.893-3.777 1.273-5.621c6.238-30.281 2.16-54.676-11.769-62.708c-13.355-7.7-35.196.329-57.254 19.526a171.23 171.23 0 0 0-6.375 5.848a155.866 155.866 0 0 0-4.241-3.917C100.759 3.829 77.587-4.822 63.673 3.233C50.33 10.957 46.379 33.89 51.995 62.588a170.974 170.974 0 0 0 1.892 8.48c-3.28.932-6.445 1.924-9.474 2.98C17.309 83.498 0 98.307 0 113.668c0 15.865 18.582 31.778 46.812 41.427a145.52 145.52 0 0 0 6.921 2.165a167.467 167.467 0 0 0-2.01 9.138c-5.354 28.2-1.173 50.591 12.134 58.266c13.744 7.926 36.812-.22 59.273-19.855a145.567 145.567 0 0 0 5.342-4.923a168.064 168.064 0 0 0 6.92 6.314c21.758 18.722 43.246 26.282 56.54 18.586c13.731-7.949 18.194-32.003 12.4-61.268a145.016 145.016 0 0 0-1.535-6.842c1.62-.48 3.21-.974 4.76-1.488c29.348-9.723 48.443-25.443 48.443-41.52c0-15.417-17.868-30.326-45.517-39.844Zm-6.365 70.984c-1.4.463-2.836.91-4.3 1.345c-3.24-10.257-7.612-21.163-12.963-32.432c5.106-11 9.31-21.767 12.459-31.957c2.619.758 5.16 1.557 7.61 2.4c23.69 8.156 38.14 20.213 38.14 29.504c0 9.896-15.606 22.743-40.946 31.14Zm-10.514 20.834c2.562 12.94 2.927 24.64 1.23 33.787c-1.524 8.219-4.59 13.698-8.382 15.893c-8.067 4.67-25.32-1.4-43.927-17.412a156.726 156.726 0 0 1-6.437-5.87c7.214-7.889 14.423-17.06 21.459-27.246c12.376-1.098 24.068-2.894 34.671-5.345a134.17 134.17 0 0 1 1.386 6.193ZM87.276 214.515c-7.882 2.783-14.16 2.863-17.955.675c-8.075-4.657-11.432-22.636-6.853-46.752a156.923 156.923 0 0 1 1.869-8.499c10.486 2.32 22.093 3.988 34.498 4.994c7.084 9.967 14.501 19.128 21.976 27.15a134.668 134.668 0 0 1-4.877 4.492c-9.933 8.682-19.886 14.842-28.658 17.94ZM50.35 144.747c-12.483-4.267-22.792-9.812-29.858-15.863c-6.35-5.437-9.555-10.836-9.555-15.216c0-9.322 13.897-21.212 37.076-29.293c2.813-.98 5.757-1.905 8.812-2.773c3.204 10.42 7.406 21.315 12.477 32.332c-5.137 11.18-9.399 22.249-12.634 32.792a134.718 134.718 0 0 1-6.318-1.979Zm12.378-84.26c-4.811-24.587-1.616-43.134 6.425-47.789c8.564-4.958 27.502 2.111 47.463 19.835a144.318 144.318 0 0 1 3.841 3.545c-7.438 7.987-14.787 17.08-21.808 26.988c-12.04 1.116-23.565 2.908-34.161 5.309a160.342 160.342 0 0 1-1.76-7.887Zm110.427 27.268a347.8 347.8 0 0 0-7.785-12.803c8.168 1.033 15.994 2.404 23.343 4.08c-2.206 7.072-4.956 14.465-8.193 22.045a381.151 381.151 0 0 0-7.365-13.322Zm-45.032-43.861c5.044 5.465 10.096 11.566 15.065 18.186a322.04 322.04 0 0 0-30.257-.006c4.974-6.559 10.069-12.652 15.192-18.18ZM82.802 87.83a323.167 323.167 0 0 0-7.227 13.238c-3.184-7.553-5.909-14.98-8.134-22.152c7.304-1.634 15.093-2.97 23.209-3.984a321.524 321.524 0 0 0-7.848 12.897Zm8.081 65.352c-8.385-.936-16.291-2.203-23.593-3.793c2.26-7.3 5.045-14.885 8.298-22.6a321.187 321.187 0 0 0 7.257 13.246c2.594 4.48 5.28 8.868 8.038 13.147Zm37.542 31.03c-5.184-5.592-10.354-11.779-15.403-18.433c4.902.192 9.899.29 14.978.29c5.218 0 10.376-.117 15.453-.343c-4.985 6.774-10.018 12.97-15.028 18.486Zm52.198-57.817c3.422 7.8 6.306 15.345 8.596 22.52c-7.422 1.694-15.436 3.058-23.88 4.071a382.417 382.417 0 0 0 7.859-13.026a347.403 347.403 0 0 0 7.425-13.565Zm-16.898 8.101a358.557 358.557 0 0 1-12.281 19.815a329.4 329.4 0 0 1-23.444.823c-7.967 0-15.716-.248-23.178-.732a310.202 310.202 0 0 1-12.513-19.846h.001a307.41 307.41 0 0 1-10.923-20.627a310.278 310.278 0 0 1 10.89-20.637l-.001.001a307.318 307.318 0 0 1 12.413-19.761c7.613-.576 15.42-.876 23.31-.876H128c7.926 0 15.743.303 23.354.883a329.357 329.357 0 0 1 12.335 19.695a358.489 358.489 0 0 1 11.036 20.54a329.472 329.472 0 0 1-11 20.722Zm22.56-122.124c8.572 4.944 11.906 24.881 6.52 51.026c-.344 1.668-.73 3.367-1.15 5.09c-10.622-2.452-22.155-4.275-34.23-5.408c-7.034-10.017-14.323-19.124-21.64-27.008a160.789 160.789 0 0 1 5.888-5.4c18.9-16.447 36.564-22.941 44.612-18.3ZM128 90.808c12.625 0 22.86 10.235 22.86 22.86s-10.235 22.86-22.86 22.86s-22.86-10.235-22.86-22.86s10.235-22.86 22.86-22.86Z"></path></svg>
+\ No newline at end of file
+diff --git a/src/components/Footer/Footer.jsx b/src/components/Footer/Footer.jsx
+index 6efc950..8bd76d2 100644
+--- a/src/components/Footer/Footer.jsx
++++ b/src/components/Footer/Footer.jsx
+@@ -1,63 +1,72 @@
+ import css from "./Footer.module.scss";
+ 
++const CONTACT_METHODS = [
++  {
++    label: "Email",
++    href: "mailto:jekilllimarenko@gmail.com",
++    icon: (
++      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
++        <path
++          d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 6L12 13L4 6V6L12 13L20 6ZM4 18V8L12 15L20 8V18H4Z"
++          fill="#EA4335"
++        />
++      </svg>
++    ),
++  },
++  {
++    label: "Telegram",
++    href: "https://t.me/eyeije",
++    icon: (
++      <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
++        <path d="M44 8L4 22L17 26L20 40L28 32L38 36L44 8Z" stroke="#229ED9" strokeWidth="2.5" fill="none" />
++        <path d="M20 40L28 32L17 26L44 8L4 22" stroke="#229ED9" strokeWidth="2.5" fill="none" />
++      </svg>
++    ),
++  },
++  {
++    label: "WhatsApp",
++    href: "https://wa.me/34692142247",
++    icon: (
++      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
++        <path
++          d="M17.472 14.382c-.297-.149-1.758-.867-2.028-.967-.271-.099-.469-.148-.667.15-.198.297-.767.967-.94 1.166-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.667-1.611-.914-2.207-.242-.579-.487-.5-.667-.51-.173-.008-.372-.01-.571-.01-.198 0-.52.075-.792.372-.271.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.099 3.205 5.077 4.377.711.306 1.263.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.075-.124-.271-.198-.568-.347z"
++          fill="#25D366"
++        />
++      </svg>
++    ),
++  },
++];
++
+ const Footer = () => {
+-  
+   return (
+-    <div className={css.wrapper}>
++    <footer className={css.wrapper}>
+       <a className="anchor" id="contacts"></a>
+-      <div className={`yPaddings innerWidth ${css.container}`}>
+-        <div className={`flexCenter ${css.heading}`}>
+-          <h5 className="primaryText" style={{ color: '#286F6C',paddingBottom: '2rem' }}>Get in touch</h5>
+-        </div>
+-        <div className={`flexCenter`}>
+-          <span className={css.subheading}>
+-            <span className={css.onlineDot}></span>
+-            <span style={{ color: '#286F6C', fontFamily: 'Montserrat, Inter, Arial, sans-serif', fontWeight: 500, fontSize: '1.08rem', letterSpacing: '0.02em', }}>
+-              I&apos;m always available
+-            </span>
+-          </span>
+-        </div>
+-        <footer className={css.footerDecorWrap}>
+-          <div className={`flexCenter ${css.group}`} style={{ position: "relative" }}>
+-            <div className={css.contact}>
+-              <div className={css.contactItem}>
+-                <a href="mailto:jekilllimarenko@gmail.com" target="_blank" rel="noreferrer" className={`${css.social} ${css.gmail}`}> 
+-                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+-                    <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 6L12 13L4 6V6L12 13L20 6ZM4 18V8L12 15L20 8V18H4Z" fill="#EA4335"/>
+-                  </svg>
+-                </a>
+-                <span className={css.contactLabel}>Email</span>
+-              </div>
+-              {/* <span className={css.dotDecor}></span> */}
+-              <div className={css.contactItem}>
+-                <a href="https://t.me/eyeije" target="_blank" rel="noreferrer" className={`${css.social} ${css.telegram}`}> 
+-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+-                    <path d="M44 8L4 22L17 26L20 40L28 32L38 36L44 8Z" stroke="#229ED9" strokeWidth="2" fill="none"/>
+-                    <path d="M20 40L28 32L17 26L44 8L4 22" stroke="#229ED9" strokeWidth="2" fill="none"/>
+-                  </svg>
+-                </a>
+-                <span className={css.contactLabel}>Telegram</span>
+-              </div>
+-              {/* <span className={css.dotDecor}></span> */}
+-              <div className={css.contactItem}>
+-                <a href="tel:+34692142247" target="_blank" rel="noreferrer" className={`${css.social} ${css.whatsapp}`}> 
+-                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.028-.967-.271-.099-.469-.148-.667.15-.198.297-.767.967-.94 1.166-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.667-1.611-.914-2.207-.242-.579-.487-.5-.667-.51-.173-.008-.372-.01-.571-.01-.198 0-.52.075-.792.372-.271.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.099 3.205 5.077 4.377.711.306 1.263.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.075-.124-.271-.198-.568-.347z" fill="#25D366"/>
+-                  </svg>
+-                </a>
+-                <span className={css.contactLabel}>WhatsApp</span>
+-              </div>
+-            </div>
+-          </div>
+-          <div className={css.decorLine}></div>
+-          <div className={css.madeByWrap}>
+-            <span className={css.madeByText}>
+-            made by <span className={css.madeByName}>Yevhenii Lymarenko</span>
+-            </span>
+-          </div>
+-        </footer>
+-        </div>
++      <div className="innerWidth yPaddings">
++        <h2 className={css.title}>Get in Touch</h2>
++        <p className={css.subtitle}>
++          <span className={css.statusDot} aria-hidden="true" />
++          I&apos;m always available for a chat
++        </p>
++
++        <ul className={css.contactList}>
++          {CONTACT_METHODS.map((method) => (
++            <li key={method.label}>
++              <a
++                href={method.href}
++                target="_blank"
++                rel="noopener noreferrer"
++                className={css.contactLink}
++              >
++                <span className={css.iconCircle}>{method.icon}</span>
++                {method.label}
++              </a>
++            </li>
++          ))}
++        </ul>
++
++        <p className={css.credit}>Built by Yevhenii Lymarenko</p>
+       </div>
++    </footer>
+   );
+ };
+ 
+diff --git a/src/components/Footer/Footer.module.scss b/src/components/Footer/Footer.module.scss
+index 48a9500..1d1bf17 100644
+--- a/src/components/Footer/Footer.module.scss
++++ b/src/components/Footer/Footer.module.scss
+@@ -1,252 +1,78 @@
+-.madeByIcon {
+-  display: inline-block;
+-  margin-right: 0.32em;
+-  vertical-align: middle;
+-  opacity: 0.85;
+-  transition: opacity 0.2s;
+-}
+-.madeByName:hover .madeByIcon {
+-  opacity: 1;
+-}
+-.madeByWrap {
+-  width: 100%;
++@import "../../styles/contants.scss";
++
++.wrapper {
++  background: #fff;
++  border-top: 1px solid $border-color;
+   text-align: center;
+-  margin-top: 2.2rem;
+-  margin-bottom: 0.2rem;
+-}
+-.madeByText {
+-  display: inline-flex;
+-  align-items: center;
+-  gap: 0.18em;
+-  color: #222;
+-  background: linear-gradient(90deg, #f8fafc 0%, #eaf6f5 100%);
+-  border-radius: 18px;
+-  padding: 0.32em 1.1em;
+-  font-weight: 500;
+-  font-size: 1.02rem;
+-  font-family: 'Inter', 'Montserrat', 'Eudoxus Sans', Arial, sans-serif;
+-  letter-spacing: 0.04em;
+-  box-shadow: 0 2px 12px rgba(40,111,108,0.07);
+-  border: 1.5px solid #eec048;
+-  margin: 0 auto;
+-  transition: box-shadow 0.2s, border-color 0.2s;
+-}
+-.madeByText:hover {
+-  box-shadow: 0 4px 18px #eec04833;
+-  border-color: #229ED9;
+-}
+-.madeByIcon {
+-  display: inline-block;
+-  margin-right: 0.32em;
+-  vertical-align: middle;
+-  opacity: 0.85;
+-  transition: opacity 0.2s;
+-}
+-.madeByName:hover .madeByIcon {
+-  opacity: 1;
+ }
+-.madeByName {
+-  font-family: 'Pacifico', 'Montserrat', 'Inter', cursive, sans-serif;
+-  font-weight: 400;
+-  font-size: 1.22rem;
+-  color: #229ED9;
+-  letter-spacing: 0.09em;
++
++.title {
++  font-size: 1.5rem;
++  font-weight: 700;
++  color: $primary;
++  margin: 0 0 0.6rem;
+ }
+-.madeByText {
+-  display: inline-flex;
++
++.subtitle {
++  display: flex;
+   align-items: center;
+-  gap: 0.18em;
+-  color: #222;
+-  background: linear-gradient(90deg, #f8fafc 0%, #eaf6f5 100%);
+-  border-radius: 18px;
+-  padding: 0.32em 1.1em;
++  justify-content: center;
++  gap: 0.5rem;
++  font-size: 1rem;
+   font-weight: 500;
+-  font-size: 1.02rem;
+-  font-family: 'Inter', 'Montserrat', 'Eudoxus Sans', Arial, sans-serif;
+-  letter-spacing: 0.04em;
+-  box-shadow: 0 2px 12px rgba(40,111,108,0.07);
+-  border: 1.5px solid #eec048;
+-  margin: 0 auto;
+-  transition: box-shadow 0.2s, border-color 0.2s;
++  color: $text-body;
++  margin: 0 0 2.5rem;
+ }
+-.madeByText:hover {
+-  box-shadow: 0 4px 18px #eec04833;
+-  border-color: #229ED9;
+-}
+-.madeByName {
+-  font-family: 'Agbalumo', 'Montserrat', 'Inter', cursive, sans-serif;
+-  font-weight: 600;
+-  font-size: 1.08rem;
+-  color: #229ED9;
+-  letter-spacing: 0.09em;
+-  margin-left: 0.18em;
+-}
+-
+-@import "../../styles/contants.scss";
+ 
+-.dotDecor {
+-  display: inline-block;
++.statusDot {
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+-  background: #eee;
+-  margin: 0 1.2rem;
+-  vertical-align: middle;
+-  box-shadow: 0 0 4px 0 #ccc;
++  background: #22c55e;
++  flex-shrink: 0;
+ }
+-.onlineDot {
+-  position: relative;
+-}
+-@keyframes footerPulse {
+-  0% {
+-    background-color: #00ff00;
+-    box-shadow: 0 0 5px #00ff00;
+-  }
+-  50% {
+-    background-color: #25d366;
+-    box-shadow: 0 0 10px #25d366;
+-  }
+-  100% {
+-    background-color: #00ff00;
+-    box-shadow: 0 0 5px #00ff00;
+-  }
+-}
+-.onlineDot {
+-  display: inline-block;
+-  width: 0.35rem;
+-  height: 0.35rem;
+-  border-radius: 9999px;
+-  background-color: #00ff00;
+-  margin-right: 8px;
+-  vertical-align: middle;
+-  box-shadow: 0 0 5px #00ff00;
+-  animation: footerPulse 1s infinite;
+-}
+-
+ 
+-.contact {
++.contactList {
++  list-style: none;
+   display: flex;
+-  gap: 2.5rem;
+-  padding: 0.5rem 2.2rem 0.5rem 2.2rem;
++  justify-content: center;
++  flex-wrap: wrap;
++  gap: 1.25rem;
++  margin: 0 0 2.5rem;
++  padding: 0;
+ }
+ 
+-.contactItem {
++.contactLink {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+-  gap: 10px;
+-  padding: 0.5rem 1.2rem;
+-}
+-
+-.contactItem img {
+-  width: 48px;
+-  height: 48px;
+-  object-fit: contain;
+-}
+-
+-.contact {
+-  display: flex;
+-  flex-direction: row;
+-  gap: 4.2rem;
+-  justify-content: center;
+-  align-items: center;
+-  flex-wrap: nowrap;
+-  margin-top: 2.2rem;
+-}
+-
+-.decorLine {
+-  width: 100%;
+-  height: 2px;
+-  background: linear-gradient(90deg, #EA4335 0%, #229ED9 50%, #25D366 100%);
+-  border-radius: 2px;
+-  margin: 2.2rem 0 1.2rem 0;
+-  opacity: 0.18;
++  gap: 0.6rem;
++  text-decoration: none;
++  color: $primary;
++  font-size: 0.85rem;
++  font-weight: 600;
++  padding: 0.5rem;
++  border-radius: $radius-md;
++  transition: background $transition-fast;
+ }
+ 
+-.decorSVG {
+-  position: absolute;
+-  top: 50%;
+-  left: 0;
+-  width: 64px;
+-  height: 64px;
+-  transform: translateY(-50%);
+-  opacity: 0.13;
+-  pointer-events: none;
+-}
+-.decorSVGRight {
+-  left: auto;
+-  right: 0;
++.contactLink:hover,
++.contactLink:focus-visible {
++  background: $secondary-white;
+ }
+ 
+-.social {
+-  background: transparent;
++.iconCircle {
++  width: 44px;
++  height: 44px;
+   border-radius: 50%;
+-  box-shadow: none;
+-  padding: 0.3rem;
+-  min-width: 0;
++  background: $secondary-white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+-  transition: border-color 0.2s, transform 0.18s;
+-  position: relative;
+-  border: 3px solid #eee;
+-  margin: 0 0.5rem;
+-  width: 64px;
+-  height: 64px;
+-}
+-
+-.gmail {
+-  border-color: #EA4335;
+-}
+-.telegram {
+-  border-color: #229ED9;
+-  position: relative;
+-}
+-.whatsapp {
+-  border-color: #25D366;
+-}
+-
+-.social img {
+-  width: 48px;
+-  height: 48px;
+-  border-radius: 50%;
+-  background: #fff;
+-  box-shadow: none;
+-  padding: 0;
+-}
+-.social h4 {
+-  display: none;
+-}
+-.social a {
+-  font-size: 1rem;
+-  color: #286F6C;
+-  text-decoration: none;
+-  margin-bottom: 0;
+-  transition: color 0.18s;
+-  text-align: center;
+-  font-weight: 600;
+-}
+-.social a:hover {
+-  color: #EEC048;
+ }
+ 
+-@media (max-width: 600px) {
+-  .contact {
+-    gap: 0.7rem;
+-    justify-content: center;
+-    margin-top: 2.2rem;
+-    padding-left: 2.5rem;
+-    padding-right: 0.7rem;
+-  }
+-  .social {
+-    width: 44px;
+-    height: 44px;
+-    margin: 0 0.2rem;
+-    padding: 0.1rem;
+-    border-width: 2px;
+-  }
+-  .social img {
+-    width: 32px;
+-    height: 32px;
+-  }
++.credit {
++  font-size: 0.85rem;
++  color: $text-muted;
++  margin: 0;
+ }
+diff --git a/src/components/Header/Header.jsx b/src/components/Header/Header.jsx
+index 62b22a3..f501bfd 100644
+--- a/src/components/Header/Header.jsx
++++ b/src/components/Header/Header.jsx
+@@ -1,52 +1,77 @@
+-
++import { useRef, useState } from "react";
+ import css from "./Header.module.scss";
+-import { motion } from "framer-motion";
+-import { headerVariants } from "../../utils/motion";
+ import useHeaderShadow from "../../hooks/useHeaderShadow";
++import useOutsideAlerter from "../../hooks/useOutsideAlerter";
++
++const NAV_LINKS = [
++  { href: "#home", label: "About me" },
++  { href: "#work", label: "Experience" },
++  { href: "#portfolio", label: "Projects" },
++  { href: "#people", label: "Testimonials" },
++  { href: "#contacts", label: "Contacts" },
++];
+ 
+ const Header = () => {
+-  // burger menu state removed
+   const headerShadow = useHeaderShadow();
++  const [menuOpen, setMenuOpen] = useState(false);
++  const menuRef = useRef(null);
++
++  useOutsideAlerter(menuRef, () => setMenuOpen(false));
++
++  const closeMenu = () => setMenuOpen(false);
+ 
+   return (
+     <>
+       <a className="anchor" id="home"></a>
+-      <motion.div
+-        initial="hidden"
+-        whileInView="show"
+-        variants={headerVariants}
+-        viewport={{ once: true, amount: 0.25 }}
++      <header
+         className={`bg-primary paddings ${css.wrapper}`}
+-        style={{ boxShadow: headerShadow }}
++        style={{ boxShadow: headerShadow || "none" }}
+       >
+-        <a className="anchor" id="home"></a>
+-
+-        <div className={`flexCenter innerWidth ${css.container}`}>
+-          <div className={css.name}>
+-            Code & Design
+-          </div>
+-          <ul
+-            className={`flexCenter ${css.menu}`}
++        <div className={`flexCenter innerWidth ${css.container}`} ref={menuRef}>
++          <a href="#home" className={css.name} onClick={closeMenu}>
++            Yevhenii Lymarenko
++          </a>
++
++          <nav aria-label="Primary">
++            <ul className={`flexCenter ${css.menu}`}>
++              {NAV_LINKS.map((link) => (
++                <li key={link.href}>
++                  <a href={link.href}>{link.label}</a>
++                </li>
++              ))}
++            </ul>
++          </nav>
++
++          <button
++            type="button"
++            className={css.menuToggle}
++            aria-label={menuOpen ? "Close menu" : "Open menu"}
++            aria-expanded={menuOpen}
++            aria-controls="mobile-nav"
++            onClick={() => setMenuOpen((open) => !open)}
++          >
++            <span className={`${css.bar} ${menuOpen ? css.barOpenTop : ""}`} />
++            <span className={`${css.bar} ${menuOpen ? css.barOpenHide : ""}`} />
++            <span className={`${css.bar} ${menuOpen ? css.barOpenBottom : ""}`} />
++          </button>
++
++          <nav
++            id="mobile-nav"
++            aria-label="Mobile"
++            className={`${css.mobileMenu} ${menuOpen ? css.mobileMenuOpen : ""}`}
+           >
+-            <li>
+-              <a href="#home">About me</a>
+-            </li>
+-            <li>
+-              <a href="#work">Experience</a>
+-            </li>
+-            <li>
+-              <a href="#portfolio">Projects</a>
+-            </li>
+-            <li>
+-              <a href="#people">Testimonials</a>
+-            </li>
+-            <li>
+-              <a href="#contacts">Contacts</a>
+-            </li>
+-          </ul>
+-          {/* burger menu removed for all screen sizes */}
++            <ul>
++              {NAV_LINKS.map((link) => (
++                <li key={link.href}>
++                  <a href={link.href} onClick={closeMenu}>
++                    {link.label}
++                  </a>
++                </li>
++              ))}
++            </ul>
++          </nav>
+         </div>
+-      </motion.div>
++      </header>
+     </>
+   );
+ };
+diff --git a/src/components/Header/Header.module.scss b/src/components/Header/Header.module.scss
+index b410a73..d8ffed2 100644
+--- a/src/components/Header/Header.module.scss
++++ b/src/components/Header/Header.module.scss
+@@ -1,101 +1,139 @@
+ @import "../../styles/contants.scss";
+ 
+-
+-
+ .wrapper {
+   position: sticky;
+   top: 0;
+   z-index: 99;
+   background: #fff;
+-  box-shadow: 0 2px 8px rgba(40, 111, 108, 0.06);
+-  border-radius: 0 0 12px 12px;
+-  transition: box-shadow 0.2s, background 0.3s;
+-  opacity: 1;
+-  transform: none;
++  transition: box-shadow 0.2s ease;
++}
++
++.container {
++  position: relative;
++  justify-content: space-between;
++  align-items: center;
++  min-height: 56px;
++}
++
++.name {
++  font-size: 1.05rem;
++  font-weight: 700;
++  letter-spacing: 0.01em;
++  color: $primary;
++  text-decoration: none;
++  white-space: nowrap;
++}
+ 
++.menu {
++  list-style: none;
++  display: flex;
++  align-items: center;
++  gap: 1.75rem;
++  font-size: 0.95rem;
++  font-weight: 500;
+ 
+-  .container {
+-    position: relative;
+-    justify-content: space-between;
+-    font-weight: 500;
+-    align-items: center;
+-    min-height: 36px;
+-
+-    .name {
+-      font-size: 1.3rem;
+-      font-family: 'Inter', 'Eudoxus Sans', sans-serif;
+-      font-weight: 700;
+-      letter-spacing: 1px;
+-      color: #286F6C;
+-      background: none;
+-      text-shadow: none;
+-      padding-left: 0.2rem;
+-      transition: color 0.3s;
+-    }
+-
+-    .menu {
+-      text-transform: uppercase;
+-      font-size: 0.95rem;
+-      list-style: none;
+-      gap: 1.2rem;
+-      cursor: pointer;
+-      display: flex;
+-      align-items: center;
+-      font-family: 'Inter', 'Eudoxus Sans', 'Arial', sans-serif;
+-
+-      li {
+-        a {
+-          color: #286F6C;
+-          text-decoration: none;
+-          padding: 0.15rem 0.5rem;
+-          border-radius: 6px;
+-          transition: background 0.2s, color 0.2s;
+-        }
+-        a:hover {
+-          background: #e0f7fa;
+-          color: #222;
+-        }
+-      }
+-
+-      @media (max-width: $md) {
+-        display: none;
+-      }
+-    }
++  li a {
++    color: $primary;
++    text-decoration: none;
++    padding: 0.3rem 0.1rem;
++    border-bottom: 2px solid transparent;
++    transition: border-color 0.15s ease, color 0.15s ease;
++  }
++
++  li a:hover,
++  li a:focus-visible {
++    color: $secondary;
++    border-bottom-color: $secondary;
++  }
+ 
++  @media (max-width: $md) {
++    display: none;
+   }
+ }
+ 
+-@media (max-width: 430px) {
+-  .wrapper {
+-    border-radius: 0 0 10px 10px;
+-    box-shadow: 0 2px 8px rgba(40, 111, 108, 0.08);
+-    padding: 0.1rem 0.2rem;
+-    display: block !important;
++// Hamburger button — hidden on desktop, shown on mobile/tablet
++.menuToggle {
++  display: none;
++  flex-direction: column;
++  justify-content: center;
++  align-items: center;
++  gap: 5px;
++  width: 40px;
++  height: 40px;
++  border: none;
++  background: transparent;
++  cursor: pointer;
++  border-radius: $radius-md;
++
++  &:focus-visible {
++    outline: 2px solid $secondary;
++    outline-offset: 2px;
+   }
+-  .container {
+-    min-height: 32px;
+-    padding: 0 0.2rem;
+-    .menu {
+-      gap: 0.3rem;
+-      font-size: 0.91rem;
+-      li {
+-        display: inline-block;
+-        margin: 0 0.05rem;
+-        a {
+-          padding: 0.13rem 0.32rem;
+-          font-size: 1.13rem;
+-          border-radius: 5px;
+-        }
+-      }
+-    }
+-    .name {
+-      font-size: 1.01rem;
+-      padding-left: 0.1rem;
+-    }
++
++  @media (max-width: $md) {
++    display: flex;
+   }
+ }
+-@media (max-width: 600px) {
+-  .wrapper {
+-    display: none !important;
++
++.bar {
++  width: 22px;
++  height: 2px;
++  background: $primary;
++  border-radius: 2px;
++  transition: transform 0.2s ease, opacity 0.2s ease;
++}
++
++.barOpenTop {
++  transform: translateY(7px) rotate(45deg);
++}
++
++.barOpenBottom {
++  transform: translateY(-7px) rotate(-45deg);
++}
++
++.barOpenHide {
++  opacity: 0;
++}
++
++// Mobile dropdown panel
++.mobileMenu {
++  display: none;
++
++  @media (max-width: $md) {
++    display: block;
++    position: absolute;
++    top: calc(100% + 1px);
++    left: 0;
++    right: 0;
++    background: #fff;
++    border-top: 1px solid $border-color;
++    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
++    max-height: 0;
++    overflow: hidden;
++    transition: max-height 0.2s ease;
++  }
++
++  ul {
++    list-style: none;
++    display: flex;
++    flex-direction: column;
++    padding: 0.5rem 0;
++  }
++
++  li a {
++    display: block;
++    padding: 0.85rem 1.5rem;
++    color: $primary;
++    text-decoration: none;
++    font-weight: 500;
+   }
++
++  li a:hover,
++  li a:focus-visible {
++    background: $secondary-white;
++  }
++}
++
++.mobileMenuOpen {
++  max-height: 320px;
+ }
+diff --git a/src/components/MainSection/MainSection.jsx b/src/components/MainSection/MainSection.jsx
+index 0b80ada..078a4ac 100644
+--- a/src/components/MainSection/MainSection.jsx
++++ b/src/components/MainSection/MainSection.jsx
+@@ -1,113 +1,63 @@
+ import css from "./MainSection.module.scss";
+-import { motion } from "framer-motion";
+-import { fadeIn, staggerContainer } from "../../utils/motion";
+-import { WhatDoIHelp, techSkills } from "../../utils/data";
++import { heroIntro, coreSkills } from "../../utils/data";
+ 
+ const MainSection = () => {
+   return (
+-    <section
+-      className={css.wrapper}
+-      style={{ padding: "8px 0" }}
+-    >
+-      <motion.div
+-        initial="hidden"
+-        whileInView="show"
+-        variants={staggerContainer}
+-        viewport={{ once: true, amount: 0.25 }}
+-        className={css.container}
+-        style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+-      >
+-        <div className={css.leftBlock}>
+-          <motion.picture
+-            variants={fadeIn("up", "tween", 0.2, 1)}
+-            className={css.heroPhoto}
+-          >
+-            <source srcSet="./images/person.jpg" type="image" />
+-            <img
+-              src="./images/person.jpg"
+-              alt="Yevhenii Lymarenko"
+-              width="150"
+-              height="150"
+-              loading="lazy"
+-              style={{ display: 'block', width: '200px', height: '200px', objectFit: 'cover', borderRadius: '50%' }}
+-            />
+-          </motion.picture>
+-          <motion.h1
+-            variants={fadeIn("up", "tween", 0.3, 1)}
+-            className={css.heroTitle}
+-          >
+-            Yevhenii Lymarenko
+-          </motion.h1>
+-          <motion.div
+-            variants={fadeIn("up", "tween", 0.4, 1)}
+-            className={css.heroSubtitle}
+-          >
+-            Front-End Developer
+-          </motion.div>
+-          <motion.div
+-            className={css.heroActions}
+-            initial={{ opacity: 0, y: 40 }}
+-            whileInView={{ opacity: 1, y: 0 }}
+-            transition={{ duration: 0.7, delay: 0.5, type: "spring" }}
+-            viewport={{ once: true }}
+-          >
++    <section className={`paddings ${css.wrapper}`}>
++      <div className={css.container}>
++        <div className={css.intro}>
++          <img
++            src="./images/person.jpg"
++            alt="Yevhenii Lymarenko"
++            width="160"
++            height="160"
++            className={css.photo}
++          />
++          <h1 className={css.name}>Yevhenii Lymarenko</h1>
++          <p className={css.role}>Front-End Developer — React &amp; TypeScript</p>
++          <p className={css.experience}>2+ years building production React applications</p>
++
++          <div className={css.actions}>
+             <a
+-              className={css.heroCv}
++              className={css.cvButton}
+               href="https://drive.google.com/uc?export=download&id=18YoAw962WatK2moG4QQr7CeGAJySSPGu"
+               download
+             >
+               Download CV
+             </a>
+-            <div className={css.heroSocials}>
+-              <a href="https://www.linkedin.com/in/lymarenko/" target="_blank" rel="noopener noreferrer">
+-                <img src="./images/linkedin.png" alt="LinkedIn" width="56" height="56" />
++            <div className={css.socials}>
++              <a
++                href="https://www.linkedin.com/in/lymarenko/"
++                target="_blank"
++                rel="noopener noreferrer"
++                aria-label="LinkedIn profile"
++              >
++                <img src="./images/linkedin.png" alt="" width="22" height="22" />
+               </a>
+-              <a href="https://github.com/YevheniiLi" target="_blank" rel="noopener noreferrer">
+-                <img src="./images/github.png" alt="GitHub" width="56" height="56" />
++              <a
++                href="https://github.com/YevheniiLi"
++                target="_blank"
++                rel="noopener noreferrer"
++                aria-label="GitHub profile"
++              >
++                <img src="./images/github.png" alt="" width="22" height="22" />
+               </a>
+             </div>
+-          </motion.div>
++          </div>
+         </div>
+-        <div className={css.rightBlock}>
+-          {/* <motion.span
+-            className={css.aboutTitle}
+-            initial={{ opacity: 0 }}
+-            whileInView={{ opacity: 1 }}
+-            transition={{ duration: 0.7, delay: 0.2 }}
+-            viewport={{ once: true }}
+-          >
+-            About me
+-          </motion.span> */}
+-          {[WhatDoIHelp[0], WhatDoIHelp[2]].map((paragraph, i) => (
+-            <motion.span
+-              className={css.aboutText}
+-              key={i}
+-              initial={{ x: 80, scale: 0.98, opacity: 0 }}
+-              animate={{ x: 0, scale: 1, opacity: 1 }}
+-              exit={{ x: -80, scale: 0.98, opacity: 0 }}
+-              transition={{ duration: 0.7, delay: 0.2 * i, type: "spring", stiffness: 120 }}
+-            >
+-              {paragraph}
+-            </motion.span>
+-          ))}
+ 
+-          {/* Tech Stack Section */}
+-          <motion.div
+-            className={css.techStackBlock}
+-            initial={{ opacity: 0, y: 40 }}
+-            whileInView={{ opacity: 1, y: 0 }}
+-            transition={{ duration: 0.8, delay: 0.3, type: "spring" }}
+-            viewport={{ once: true }}
+-          >
+-            <div className={css.techStackTitle}>Tech Stack</div>
+-            <div className={css.techStackGrid}>
+-              {techSkills.map((skill, idx) => (
+-                <span className={css.techSkillTag} key={idx}>{skill}</span>
+-              ))}
+-            </div>
+-          </motion.div>
++        <div className={css.about}>
++          <p className={css.aboutText}>{heroIntro}</p>
++
++          <div className={css.techStack}>
++            {coreSkills.map((skill) => (
++              <span className={css.techTag} key={skill}>
++                {skill}
++              </span>
++            ))}
++          </div>
+         </div>
+-      </motion.div>
++      </div>
+     </section>
+   );
+ };
+diff --git a/src/components/MainSection/MainSection.module.scss b/src/components/MainSection/MainSection.module.scss
+index b6a35bb..8b92f8c 100644
+--- a/src/components/MainSection/MainSection.module.scss
++++ b/src/components/MainSection/MainSection.module.scss
+@@ -1,401 +1,164 @@
+-.techStackBlock {
+-  margin-top: 1.2rem;
+-  padding: 0.3rem 0 0 0;
+-  background: none;
+-  border-radius: 0;
+-  box-shadow: none;
+-  display: flex;
+-  flex-direction: column;
+-  align-items: flex-start;
+-  gap: 0.7rem;
+-    @media screen and (max-width: 600px) {
+-    padding: 0.4rem 0.5rem;
+-    margin-bottom: 0.3rem;
+-  }
+-}
+-.techStackTitle {
+-  font-size: 1.01rem;
+-  font-weight: 600;
+-  color: #229ED9;
+-  letter-spacing: 0.2px;
+-  margin-bottom: 0.1rem;
+-  font-family: 'Eudoxus Sans', sans-serif;
+-  @media screen and (max-width: 600px) {
+-    padding: 0.4rem 0.5rem;
+-    margin-bottom: 0.3rem;
+-  }
+-
+-}
+-.techStackGrid {
+-  display: flex;
+-  flex-wrap: wrap;
+-  gap: 0.3rem 0.4rem;
+-}
+-.techSkillTag {
+-  background: #f8fafc;
+-  color: #286F6C;
+-  font-size: 0.93rem;
+-  font-family: 'Inter', 'Eudoxus Sans', sans-serif;
+-  padding: 0.22em 0.7em;
+-  border-radius: 6px;
+-  font-weight: 500;
+-  box-shadow: none;
+-  transition: background 0.18s, color 0.18s, transform 0.14s;
+-  cursor: default;
+-}
+-.techSkillTag:hover {
+-  background: #e0f7fa;
+-  color: #229ED9;
+-  transform: scale(1.04);
+-}
+-@media (max-width: 600px) {
+-  .wrapper {
+-    background: #fff;
+-    min-height: 60vh;
+-    display: flex;
+-    align-items: center;
+-    justify-content: center;
+-    margin-top: 0;
+-    padding: 0 0.5rem;
+-  }
+-  .minimalMobileSection {
+-    width: 100%;
+-    max-width: 340px;
+-    margin: 0 auto;
+-    display: flex;
+-    flex-direction: column;
+-    align-items: center;
+-    justify-content: center;
+-    background: none;
+-    box-shadow: none;
+-    border-radius: 0;
+-    padding: 0;
+-  }
+-  .minimalPhoto {
+-    width: 90px;
+-    height: 90px;
+-    border-radius: 50%;
+-    object-fit: cover;
+-    margin-bottom: 0.7rem;
+-    box-shadow: none;
+-    background: #f8fafc;
+-  }
+-  .minimalTitle {
+-    font-size: 1.15rem;
+-    font-weight: 700;
+-    color: #229ED9;
+-    margin-bottom: 0.2rem;
+-    text-align: center;
+-    letter-spacing: 0.1px;
+-  }
+-  .minimalSubtitle {
+-    font-size: 0.98rem;
+-    color: #286F6C;
+-    margin-bottom: 0.5rem;
+-    text-align: center;
+-    font-weight: 500;
+-  }
+-  .minimalDesc {
+-    font-size: 0.97rem;
+-    color: #222;
+-    text-align: center;
+-    margin-bottom: 0.2rem;
+-    font-family: 'Inter', 'Eudoxus Sans', sans-serif;
+-    font-weight: 400;
+-    letter-spacing: 0.05em;
+-  }
+-}
+-@media (max-width: 600px) {
+-  .container {
+-    flex-direction: column;
+-    gap: 0.5rem;
+-    padding: 0.7rem 0.1rem 1rem 0.1rem;
+-    border-radius: 14px;
+-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+-    margin: 0.5rem 0;
+-    align-items: center;
+-    width: 100%;
+-    max-width: 100vw;
+-  }
+-  .heroPhoto, .heroPhoto img {
+-    width: 90px;
+-    height: 90px;
+-    margin-bottom: 0.2rem;
+-    box-shadow: none;
+-    border-width: 2px;
+-    display: block;
+-    margin-left: auto;
+-    margin-right: auto;
+-    background: #fff;
+-  }
+-  .heroTitle {
+-    font-size: 1.2rem;
+-    margin: 0.2rem 0 0.2rem 0;
+-    letter-spacing: 0.2px;
+-    text-align: center;
+-    background: none;
+-    color: #286F6C;
+-    -webkit-text-fill-color: initial;
+-    background-clip: initial;
+-    -webkit-background-clip: initial;
+-    text-shadow: none;
++@import "../../styles/contants.scss";
+ 
++@keyframes fadeInUp {
++  from {
++    opacity: 0;
++    transform: translateY(12px);
+   }
+-  .heroSubtitle {
+-    font-size: 0.95rem;
+-    margin-bottom: 0.5rem;
+-    padding: 0.2rem 0.5rem;
+-    background: none;
+-    border-radius: 0;
+-    box-shadow: none;
+-    color: #2d3a4a;
+-  }
+-  .heroActions {
+-    flex-direction: column;
+-    gap: 0.7rem;
+-    margin-top: 0.5rem;
+-  }
+-  .heroCv {
+-    padding: 0.5rem 1.1rem;
+-    font-size: 0.95rem;
+-    border-radius: 18px;
+-    box-shadow: none;
+-    background: #229ED9;
+-    background-size: initial;
+-    color: #fff;
+-    letter-spacing: 0.1px;
+-  }
+-  .heroSocials {
+-    gap: 1.2rem;
+-  }
+-  .heroSocials a {
+-    font-size: 1.1rem;
+-    box-shadow: none;
+-    padding: 0.1rem;
+-    background: #fff;
+-    border-radius: 50%;
+-  }
+-  .rightBlock {
+-    padding-left: 0;
+-    gap: 0.7rem;
+-  }
+-  // .aboutTitle {
+-  //   font-size: 1rem;
+-  //   margin-bottom: 0.1rem;
+-  //   letter-spacing: 0.1px;
+-  //   text-align: center;
+-  //   background: none;
+-  //   color: #229ED9;
+-  //   -webkit-text-fill-color: initial;
+-  //   background-clip: initial;
+-  //   -webkit-background-clip: initial;
+-  //   text-shadow: none;
+-    
+-  // }
+-  .aboutText {
+-    font-size: 0.95rem;
+-    padding: 0.4rem 0.5rem;
+-    margin-bottom: 0.3rem;
+-    border-radius: 7px;
+-    box-shadow: none;
+-    background: #f8fafc;
+-    color: #222;
+-    letter-spacing: 0.1px;
++  to {
++    opacity: 1;
++    transform: translateY(0);
+   }
+ }
+-@import "../../styles/contants.scss";
+ 
+ .wrapper {
+-  min-height: 100vh;
+-  display: flex;
+-  align-items: center;
+-  justify-content: center;
+-  background: linear-gradient(120deg, #f8fafc 60%, #e0f7fa 100%);
+-  padding: 0 1.5rem;
+-  margin-top: -70px;
++  // spacing handled by the shared `.paddings` utility class
+ }
+ 
+ .container {
+-  display: flex;
+-  flex-direction: row;
+-  gap: 4rem;
+-  background: rgba(255,255,255,0.92);
+-  border-radius: 36px;
+-  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+-  padding: 3rem 3rem 2.5rem 3rem;
+   max-width: 1100px;
+-  width: 100%;
+-  margin: 2rem 0;
+-  @media (max-width: 900px) {
+-    flex-direction: column;
+-    gap: 2rem;
+-    padding: 2rem 1rem;
+-    max-width: 98vw;
++  margin: 0 auto;
++  display: grid;
++  grid-template-columns: 1fr;
++  gap: 3rem;
++  align-items: center;
++  animation: fadeInUp 0.5s ease-out both;
++
++  @media (prefers-reduced-motion: reduce) {
++    animation: none;
++  }
++
++  @media (min-width: $lg) {
++    grid-template-columns: minmax(260px, 340px) 1fr;
++    gap: 4rem;
+   }
+ }
+ 
+-.leftBlock {
+-  flex: 1;
++.intro {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+-  justify-content: center;
+-  gap: 1.5rem;
++  text-align: center;
++  gap: 0.6rem;
++
++  @media (min-width: $lg) {
++    align-items: flex-start;
++    text-align: left;
++  }
+ }
+ 
+-// ...existing code...
+-.heroPhoto, .heroPhoto img {
+-  width: 200px;
+-  height: 200px;
+-  object-fit: cover;
++.photo {
++  width: 160px;
++  height: 160px;
+   border-radius: 50%;
+-  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+-  border: 4px solid #fff;
+-  background: #e0f7fa;
+-  transition: box-shadow 0.3s;
++  object-fit: cover;
++  border: 3px solid #fff;
++  outline: 1px solid $secondary-white;
+   margin-bottom: 0.5rem;
+-  display: block;
+-}
+-.heroPhoto:hover, .heroPhoto img:hover {
+-  box-shadow: 0 12px 40px rgba(0,0,0,0.28);
+ }
+ 
+-.heroTitle {
+-  font-family: "Agbalumo", sans-serif;
+-  font-size: 2.4rem;
+-  text-align: center;
++.name {
++  font-size: 1.75rem;
+   font-weight: 700;
+-  background: linear-gradient(90deg, #00bfff, #6b8e23);
+-  background-clip: text;
+-  -webkit-background-clip: text;
+-  color: transparent;
+-  -webkit-text-fill-color: transparent;
+-  margin-top: 0.5rem;
+-  margin-bottom: 0.5rem;
+-  letter-spacing: 1px;
++  color: $primary;
++  margin: 0;
++  line-height: 1.2;
+ }
+ 
+-.heroSubtitle {
+-  font-size: 1.15rem;
+-  color: #2d3a4a;
+-  text-align: center;
+-  margin-bottom: 1.2rem;
++.role {
++  font-size: 1.05rem;
+   font-weight: 500;
+-  line-height: 1.5;
+-  background: rgba(224,247,250,0.5);
+-  border-radius: 12px;
+-  padding: 0.5rem 1rem;
+-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
++  color: $secondary;
++  margin: 0;
+ }
+ 
+-.heroActions {
++.experience {
++  font-size: 0.9rem;
++  font-weight: 500;
++  color: $text-muted;
++  margin: 0 0 0.5rem;
++}
++
++.actions {
+   display: flex;
+-  flex-direction: row;
+-  gap: 2.5rem;
+-  justify-content: center;
++  flex-direction: column;
+   align-items: center;
+-  margin-top: 1.2rem;
+-  flex-wrap: wrap;
++  gap: 1rem;
++  margin-top: 0.5rem;
++
++  @media (min-width: $lg) {
++    align-items: flex-start;
++  }
+ }
+ 
+-.heroCv {
+-  padding: 0.7rem 1.6rem;
+-  background: linear-gradient(270deg, #6b8e23, #00bfff, #eec048, #6b8e23);
+-  background-size: 400% 400%;
++.cvButton {
++  display: inline-block;
++  padding: 0.7rem 1.75rem;
++  background: $secondary;
+   color: #fff;
+   font-weight: 600;
+-  border: none;
+-  border-radius: 30px;
+-  font-size: 1rem;
+-  cursor: pointer;
+-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+-  transition: background-position 1.2s cubic-bezier(0.4,0,0.2,1), box-shadow 0.4s;
+-  letter-spacing: 0.5px;
++  font-size: 0.95rem;
++  border-radius: $radius-md;
++  text-decoration: none;
++  transition: background $transition-fast;
+ }
+-.heroCv:hover {
+-  background-position: 100% 0;
+-  box-shadow: 0 4px 16px rgba(0,0,0,0.16);
++
++.cvButton:hover,
++.cvButton:focus-visible {
++  background: darken($secondary, 8%);
+ }
+ 
+-.heroSocials {
++.socials {
+   display: flex;
+-  gap: 3.5rem;
++  gap: 0.75rem;
+ }
+-.heroSocials a {
+-  color: #00bfff;
+-  font-size: 1.5rem;
+-  transition: color 0.2s, transform 0.2s;
+-  background: #f8fafc;
++
++.socials a {
++  display: flex;
++  align-items: center;
++  justify-content: center;
++  width: 44px;
++  height: 44px;
+   border-radius: 50%;
+-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+-  padding: 0.3rem;
++  background: $secondary-white;
++  transition: background $transition-fast;
++}
++
++.socials a:hover,
++.socials a:focus-visible {
++  background: darken(#E7E7E7, 8%);
+ }
+-.heroSocials a:hover {
+-  color: #6b8e23;
+-  transform: scale(1.15);
+-  background: #e0f7fa;
++
++.socials img {
++  width: 22px;
++  height: 22px;
+ }
+ 
+-.rightBlock {
+-  flex: 1;
++.about {
+   display: flex;
+   flex-direction: column;
+-  justify-content: center;
+-  gap: 1.5rem;
+-  padding-left: 1.5rem;
+-  @media (max-width: 900px) {
+-    padding-left: 0;
+-  }
++  gap: 1.75rem;
+ }
+ 
+-.aboutTitle {
+-  font-size: 1.6rem;
+-  font-family: 'Agbalumo', 'Eudoxus Sans', sans-serif;
+-  background: linear-gradient(90deg, #286F6C 0%, #EEC048 100%);
+-  -webkit-background-clip: text;
+-  -webkit-text-fill-color: transparent;
+-  background-clip: text;
+-  text-shadow: 0 2px 12px rgba(40, 111, 108, 0.12);
+-  margin-bottom: 0.7rem;
+-  font-weight: 800;
+-  letter-spacing: 1.5px;
+-}
+-@media (max-width: 600px) {
+-  .wrapper {
+-    margin-top: 0;
+-  }
+-  .aboutTitle {
+-    font-size: 1.05rem;
+-    margin-bottom: 0.2rem;
+-    letter-spacing: 0.2px;
+-    text-align: center;
+-  }
++.aboutText {
++  font-size: 1.05rem;
++  line-height: 1.75;
++  color: $text-body;
++  margin: 0;
++  max-width: 60ch;
+ }
+ 
+-.aboutText {
+-  font-size: 1rem;
+-  color: #222;
+-  font-family: 'Inter', 'Eudoxus Sans', 'Arial', sans-serif;
+-  line-height: 1.8;
+-  background: rgba(255,255,255,0.85);
+-  border-radius: 12px;
+-  padding: 0.7rem 1rem;
+-  margin-bottom: 0.7rem;
+-  box-shadow: 0 2px 12px rgba(40, 111, 108, 0.07);
+-  font-weight: 500;
+-  letter-spacing: 0.2px;
++.techStack {
++  display: flex;
++  flex-wrap: wrap;
++  gap: 0.5rem;
+ }
+ 
+-@media (max-width: 600px) {
+-  .container {
+-    flex-direction: column;
+-    gap: 0.5rem;
+-    padding: 0.7rem 0.1rem 1rem 0.1rem;
+-    border-radius: 14px;
+-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+-    margin: 0.5rem 0;
+-    align-items: center;
+-    width: 100%;
+-    max-width: 100vw;
+-  }
++.techTag {
++  font-size: 0.85rem;
++  font-weight: 500;
++  color: $primary;
++  background: $secondary-white;
++  padding: 0.35rem 0.75rem;
++  border-radius: $radius-sm;
+ }
+diff --git a/src/components/People/People.jsx b/src/components/People/People.jsx
+index a7f651a..d4b4f93 100644
+--- a/src/components/People/People.jsx
++++ b/src/components/People/People.jsx
+@@ -1,59 +1,113 @@
+-/* eslint-disable react/no-unescaped-entities */
++import PropTypes from "prop-types";
+ import css from "./People.module.scss";
+-import { motion } from "framer-motion";
+-import { footerVariants, staggerContainer } from "../../utils/motion";
+-import Slider from "react-slick";
+-import { comments, sliderSettings } from "../../utils/data";
++import { testimonials, featuredRecommendation } from "../../utils/data";
++
++const initials = (name) =>
++  name
++    .split(" ")
++    .map((part) => part[0])
++    .slice(0, 2)
++    .join("")
++    .toUpperCase();
++
++const Avatar = ({ name, avatar }) => {
++  if (avatar) {
++    return (
++      <img
++        src={avatar}
++        alt=""
++        width="44"
++        height="44"
++        loading="lazy"
++        className={css.avatarImg}
++      />
++    );
++  }
++  return <div className={css.avatarFallback}>{initials(name)}</div>;
++};
++
++const PlaceholderBadge = () => <span className={css.placeholderBadge}>Placeholder</span>;
++
++Avatar.propTypes = {
++  name: PropTypes.string.isRequired,
++  avatar: PropTypes.string,
++};
++
++Avatar.defaultProps = {
++  avatar: null,
++};
+ 
+ const People = () => {
+   return (
+-    <motion.section
+-      initial="hidden"
+-      whileInView="show"
+-      variants={staggerContainer}
+-      viewport={{ once: false, amount: 0.25 }}
+-      className={`paddings ${css.wrapper}`}
+-    >
++    <section className={`paddings ${css.wrapper}`}>
+       <a className="anchor" id="people"></a>
+-      <motion.div
+-        variants={footerVariants}
+-        className={`yPaddings innerWidth ${css.container}`}
+-      >
+-        <div className={`flexCenter ${css.heading}`}>
+-          <span className="primaryText">People talk about me</span>
+-          <p style={{ marginTop: "2rem" }}>
+-            People I've worked with have said some nice things...
+-          </p>
++      <div className="innerWidth">
++        <div className={css.heading}>
++          <h2 className={css.title}>Testimonials</h2>
++          <p className={css.subtitle}>What people I&apos;ve worked with say</p>
+         </div>
+ 
+-        {/* {carousel slider} */}
+-        <div className={`yPaddings ${css.comments}`}>
+-          <Slider {...sliderSettings} className={css.slider} autoplay={true}>
+-            {comments.map((comment, i) => {
+-              return (
+-                <motion.div
+-                  className={`flexCenter ${css.comment}`}
+-                  key={i}
+-                  initial={{ opacity: 0, scale: 0.95 }}
+-                  animate={{ opacity: 1, scale: 1 }}
+-                  transition={{ duration: 0.6 }}
++        <div className={css.grid}>
++          {testimonials.map((item) => (
++            <article className={css.card} key={item.name}>
++              {item.isPlaceholder && <PlaceholderBadge />}
++              <p className={css.text}>&ldquo;{item.text}&rdquo;</p>
++              <div className={css.person}>
++                <Avatar name={item.name} avatar={item.avatar} />
++                <div>
++                  <h3 className={css.name}>{item.name}</h3>
++                  <p className={css.role}>
++                    {item.position} · {item.company}
++                  </p>
++                </div>
++              </div>
++              {item.link && (
++                <a
++                  href={item.link}
++                  target="_blank"
++                  rel="noopener noreferrer"
++                  className={css.link}
+                 >
+-                  <div className={css.avatarWrap}>
+-                    <img src={comment.img} alt="" />
+-                  </div>
+-                  <p>“{comment.comment}”</p>
+-                  <div className={css.line}></div>
+-                  <div className={css.bio}>
+-                    <span>{comment.name}</span>
+-                    <span>{comment.post}</span>
+-                  </div>
+-                </motion.div>
+-              );
+-            })}
+-          </Slider>
++                  View profile
++                </a>
++              )}
++            </article>
++          ))}
++        </div>
++
++        <div className={css.featuredWrapper}>
++          <article className={css.featuredCard}>
++            {featuredRecommendation.isPlaceholder && <PlaceholderBadge />}
++            <span className={css.quoteMark} aria-hidden="true">
++              &ldquo;
++            </span>
++            <p className={css.featuredText}>{featuredRecommendation.text}</p>
++            <div className={css.person}>
++              <Avatar
++                name={featuredRecommendation.name}
++                avatar={featuredRecommendation.avatar}
++              />
++              <div>
++                <h3 className={css.name}>{featuredRecommendation.name}</h3>
++                <p className={css.role}>
++                  {featuredRecommendation.position} · {featuredRecommendation.company}
++                </p>
++              </div>
++            </div>
++            {featuredRecommendation.link && (
++              <a
++                href={featuredRecommendation.link}
++                target="_blank"
++                rel="noopener noreferrer"
++                className={css.link}
++              >
++                View profile
++              </a>
++            )}
++          </article>
+         </div>
+-      </motion.div>
+-    </motion.section>
++      </div>
++    </section>
+   );
+ };
+ 
+diff --git a/src/components/People/People.module.scss b/src/components/People/People.module.scss
+index fe7613a..8785f28 100644
+--- a/src/components/People/People.module.scss
++++ b/src/components/People/People.module.scss
+@@ -1,143 +1,171 @@
+ @import "../../styles/contants.scss";
+ 
+ .wrapper {
+-  background: linear-gradient(120deg, #eaf6f5 0%, #f8fafc 100%);
+-  padding-top: 2.5rem;
+-  padding-bottom: 2.5rem;
+-  .container {
+-    .heading {
+-      flex-direction: column;
+-      align-items: center;
+-      justify-content: center;
+-      span {
+-        font-size: 2rem;
+-        font-weight: 800;
+-        color: #286F6C;
+-        text-align: center;
+-        letter-spacing: 1px;
+-      }
+-      p {
+-        line-height: 30px;
+-        color: #888;
+-        font-size: 1.08rem;
+-        text-align: center;
+-        margin-top: 0.7rem;
+-      }
+-    }
+-    .comments {
+-      .slider :global {
+-        .slick-list {
+-          margin: 0 -4px;
+-          box-sizing: initial;
+-          padding: 40px 0px;
+-          overflow-y: visible;
+-          & .slick-slide > div {
+-            padding: 0 10px;
+-          }
+-          & .slick-slide.slick-center > div {
+-            @media (min-width: $lg) {
+-              transform: translateY(-32px) scale(1.07);
+-              z-index: 2;
+-              transition: all 0.5s cubic-bezier(0.4,0,0.2,1);
+-            }
+-          }
+-        }
+-      }
+-      .comment {
+-        box-shadow: 0 4px 24px rgba(40,111,108,0.09);
+-        padding: 2.1rem 1.6rem 1.6rem 1.6rem;
+-        display: flex !important;
+-        flex-direction: column;
+-        gap: 0.7rem;
+-        background: rgba(255,255,255,0.18);
+-        border-radius: 22px;
+-        position: relative;
+-        border: 1.5px solid rgba(40,111,108,0.07);
+-        align-items: center;
+-        min-height: 180px;
+-        transition: box-shadow 0.3s, border-color 0.3s;
+-        .avatarWrap {
+-          display: flex;
+-          align-items: center;
+-          justify-content: center;
+-          margin-bottom: 1.1rem;
+-          width: 84px;
+-          height: 84px;
+-          border-radius: 50%;
+-          background: linear-gradient(135deg, #EEC048 0%, #286F6C 100%);
+-          padding: 4px;
+-          box-sizing: border-box;
+-        }
+-        .avatarWrap img {
+-          width: 76px;
+-          height: 76px;
+-          border-radius: 50%;
+-          object-fit: cover;
+-          box-shadow: 0 2px 12px rgba(40,111,108,0.13);
+-          background: #fff;
+-          display: block;
+-        }
+-        .quoteIcon {
+-          position: absolute;
+-          top: 1.1rem;
+-          left: 1.2rem;
+-          z-index: 2;
+-        }
+-        p {
+-          text-align: center;
+-          font-size: 1.08rem;
+-          line-height: 1.6;
+-          color: #286F6C;
+-          margin-bottom: 1.1rem;
+-          position: relative;
+-        }
+-        &.slick-active {
+-          box-shadow: 0 12px 40px rgba(40,111,108,0.18);
+-          border-color: #EEC048;
+-          transform: scale(1.04);
+-          transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
+-        }
+-        .line {
+-          width: 100%;
+-          border: 0.2px solid rgb(234, 234, 234);
+-        }
+-        .bio {
+-          > * {
+-            display: block;
+-            text-align: center;
+-          }
+-          > :nth-child(1) {
+-            font-weight: 700;
+-            margin-bottom: 5px;
+-            color: #286F6C;
+-            font-size: 1.07rem;
+-          }
+-          > :nth-child(2) {
+-            font-size: 0.97rem;
+-            color: #888;
+-          }
+-        }
+-        &::before {
+-          content: '“';
+-          position: absolute;
+-          top: 1.1rem;
+-          left: 1.2rem;
+-          font-size: 2.2rem;
+-          color: #EEC048;
+-          font-weight: 800;
+-          opacity: 0.7;
+-        }
+-        &::after {
+-          content: '”';
+-          position: absolute;
+-          bottom: 1.1rem;
+-          right: 1.2rem;
+-          font-size: 2.2rem;
+-          color: #EEC048;
+-          font-weight: 800;
+-          opacity: 0.7;
+-        }
+-      }
+-    }
++  background: #fafafa;
++}
++
++.heading {
++  margin-bottom: 2rem;
++}
++
++.title {
++  font-size: 1.5rem;
++  font-weight: 700;
++  color: $primary;
++  margin: 0 0 0.4rem;
++}
++
++.subtitle {
++  font-size: 0.98rem;
++  color: $text-muted;
++  margin: 0;
++}
++
++.grid {
++  display: grid;
++  grid-template-columns: 1fr;
++  gap: 1.5rem;
++
++  @media (min-width: $sm) {
++    grid-template-columns: repeat(2, 1fr);
++  }
++
++  @media (min-width: $lg) {
++    grid-template-columns: repeat(3, 1fr);
+   }
+ }
++
++.card {
++  position: relative;
++  display: flex;
++  flex-direction: column;
++  gap: 1rem;
++  background: #fff;
++  border: 1px solid $border-color;
++  border-radius: $radius-lg;
++  padding: 1.5rem 1.5rem 1.75rem;
++  transition: box-shadow $transition-fast, transform $transition-fast;
++}
++
++.card:hover {
++  box-shadow: $shadow-md;
++  transform: translateY(-2px);
++}
++
++.placeholderBadge {
++  align-self: flex-start;
++  font-size: 0.7rem;
++  font-weight: 700;
++  letter-spacing: 0.04em;
++  text-transform: uppercase;
++  color: #92400e;
++  background: #fef3c7;
++  border: 1px solid #fde68a;
++  padding: 0.2rem 0.55rem;
++  border-radius: 999px;
++}
++
++.text {
++  font-size: 0.95rem;
++  color: $text-body;
++  line-height: 1.65;
++  margin: 0;
++  flex: 1;
++}
++
++.person {
++  display: flex;
++  align-items: center;
++  gap: 0.75rem;
++}
++
++.avatarImg {
++  width: 44px;
++  height: 44px;
++  border-radius: 50%;
++  object-fit: cover;
++  flex-shrink: 0;
++}
++
++.avatarFallback {
++  width: 44px;
++  height: 44px;
++  border-radius: 50%;
++  background: $secondary-white;
++  color: $primary;
++  font-size: 0.85rem;
++  font-weight: 700;
++  display: flex;
++  align-items: center;
++  justify-content: center;
++  flex-shrink: 0;
++}
++
++.name {
++  font-size: 0.92rem;
++  font-weight: 700;
++  color: $primary;
++  margin: 0;
++}
++
++.role {
++  font-size: 0.82rem;
++  color: $text-muted;
++  margin: 0.1rem 0 0;
++}
++
++.link {
++  align-self: flex-start;
++  font-size: 0.85rem;
++  font-weight: 600;
++  color: $secondary;
++  text-decoration: none;
++}
++
++.link:hover,
++.link:focus-visible {
++  text-decoration: underline;
++}
++
++// Featured recommendation letter — visually distinct from the grid above
++.featuredWrapper {
++  margin-top: 2.5rem;
++  display: flex;
++  justify-content: center;
++}
++
++.featuredCard {
++  position: relative;
++  max-width: 700px;
++  width: 100%;
++  background: #fff;
++  border: 1px solid $secondary;
++  border-radius: $radius-lg;
++  padding: 2.25rem 2.5rem 2rem;
++  display: flex;
++  flex-direction: column;
++  gap: 1.25rem;
++
++  @media (max-width: $sm) {
++    padding: 1.75rem 1.5rem;
++  }
++}
++
++.quoteMark {
++  position: absolute;
++  top: 1rem;
++  left: 1.5rem;
++  font-size: 3rem;
++  line-height: 1;
++  color: $secondary-white;
++  font-weight: 700;
++  user-select: none;
++}
++
++.featuredText {
++  position: relative;
++  font-size: 1.05rem;
++  color: $text-body;
++  line-height: 1.75;
++  margin: 0.5rem 0 0;
++}
+diff --git a/src/components/Portfolio/Portfolio.jsx b/src/components/Portfolio/Portfolio.jsx
+index 1a37d98..227b367 100644
+--- a/src/components/Portfolio/Portfolio.jsx
++++ b/src/components/Portfolio/Portfolio.jsx
+@@ -1,112 +1,72 @@
+-import { useEffect } from "react";
+ import css from "./Portfolio.module.scss";
+-
+-const projects = [
+-  {
+-    img: "./images/chat.png",
+-    title: "Chat App",
+-    stack: ["React", "Firebase", "Firestore"],
+-    desc: "Real-time chat with modern UI, authentication and notifications.",
+-    code: "https://github.com/YevheniiLi/chatapp"
+-  },
+-  {
+-    img: "./images/maps.jpeg",
+-    title: "Maps Service",
+-    stack: ["React", "Leaflet", "Google Maps API"],
+-    desc: "Interactive maps, geolocation, route planning and search.",
+-    code: "https://github.com/YevheniiLi/google-maps-reactjs"
+-  },
+-  {
+-    img: "./images/trailer.jpeg",
+-    title: "Movie Trailer",
+-    stack: ["React", "Redux", "API", "Axios"],
+-    desc: "Browse and watch movie trailers, search and save favorites.",
+-    code: "https://github.com/YevheniiLi/trailer-now"
+-  }
+-];
++import { projects } from "../../utils/data";
+ 
+ const Portfolio = () => {
+-  const headingStyle = {
+-    background: "linear-gradient(90deg, #EEC048 0%, #286F6C 100%)",
+-    WebkitBackgroundClip: "text",
+-    WebkitTextFillColor: "transparent",
+-    backgroundClip: "text",
+-  };
+-
+-  useEffect(() => {
+-    const handleAnchorClick = (e) => {
+-      const anchor = e.target.closest('a[href^="#"]');
+-      if (anchor) {
+-        const id = anchor.getAttribute('href').slice(1);
+-        const el = document.getElementById(id);
+-        if (el) {
+-          e.preventDefault();
+-          el.scrollIntoView({ behavior: "smooth", block: "start" });
+-          window.history.replaceState(null, '', window.location.pathname);
+-        }
+-      }
+-    };
+-    document.addEventListener('click', handleAnchorClick);
+-    return () => document.removeEventListener('click', handleAnchorClick);
+-  }, []);
+-
+   return (
+     <section className={`paddings ${css.wrapper}`}>
+       <a className="anchor" id="portfolio"></a>
+-      <div className={`innerWidth ${css.container}`}> 
++      <div className="innerWidth">
+         <div className={css.heading}>
+-          <span className={css.primaryText} style={headingStyle}>Selected Projects</span>
+-          <span className={css.subTitle}>Best web apps & UI/UX cases</span>
++          <h2 className={css.title}>Projects</h2>
++          <p className={css.subtitle}>A few things I&apos;ve built</p>
+         </div>
+-        <div className={css.projectsGrid}>
+-          {projects.map((p, i) => (
+-            <a
+-              className={css.projectCard}
+-              key={i}
+-              href={p.code}
+-              target="_blank"
+-              rel="noopener noreferrer"
+-              style={{ cursor: "pointer", textDecoration: "none" }}
+-              onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.04)'}
+-              onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+-            >
+-              <div className={css.projectImgWrap}>
+-                {p.title === "Chat App" && (
+-                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+-                    <rect width="56" height="56" rx="16" fill="#EEC048"/>
+-                    <path d="M16 36V22C16 19.7909 17.7909 18 20 18H36C38.2091 18 40 19.7909 40 22V32C40 34.2091 38.2091 36 36 36H28L22 40V36H20C17.7909 36 16 34.2091 16 32Z" fill="#286F6C"/>
+-                  </svg>
+-                )}
+-                {p.title === "Maps Service" && (
+-                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+-                    <rect width="56" height="56" rx="16" fill="#286F6C"/>
+-                    <circle cx="28" cy="28" r="12" fill="#EEC048"/>
+-                    <path d="M28 20V28L34 32" stroke="#286F6C" strokeWidth="2.5" strokeLinecap="round"/>
+-                  </svg>
+-                )}
+-                {p.title === "Movie Trailer" && (
+-                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+-                    <rect width="56" height="56" rx="16" fill="#EEC048"/>
+-                    <polygon points="22,18 40,28 22,38" fill="#286F6C"/>
+-                  </svg>
+-                )}
+-              </div>
+-              <div className={css.projectInfo}>
+-                <div className={css.projectTitle}>{p.title}</div>
+-                <div className={css.projectStack}>{p.stack.join(" · ")}</div>
+-                <div className={css.projectDesc}>{p.desc}</div>
++
++        <div className={css.grid}>
++          {projects.map((project) => (
++            <article className={css.card} key={project.title}>
++              <img
++                src={project.img}
++                alt={`${project.title} screenshot`}
++                width="640"
++                height="360"
++                loading="lazy"
++                className={css.thumbnail}
++              />
++              <div className={css.body}>
++                <h3 className={css.cardTitle}>{project.title}</h3>
++                <p className={css.desc}>{project.desc}</p>
++
++                <div className={css.stack}>
++                  {project.stack.map((tech) => (
++                    <span className={css.stackTag} key={tech}>
++                      {tech}
++                    </span>
++                  ))}
++                </div>
++
++                <div className={css.actions}>
++                  <a
++                    href={project.code}
++                    target="_blank"
++                    rel="noopener noreferrer"
++                    className={css.actionPrimary}
++                  >
++                    View Code
++                  </a>
++                  {project.demo && (
++                    <a
++                      href={project.demo}
++                      target="_blank"
++                      rel="noopener noreferrer"
++                      className={css.actionSecondary}
++                    >
++                      Live Demo
++                    </a>
++                  )}
++                </div>
+               </div>
+-            </a>
++            </article>
+           ))}
+         </div>
+-        <div className={css.githubProjects}>
++
++        <div className={css.moreProjects}>
+           <a
+             href="https://github.com/YevheniiLi?tab=repositories"
+             target="_blank"
+             rel="noopener noreferrer"
+-            className={css.allReposBtn}
++            className={css.moreLink}
+           >
+-            All Repositories
++            View all repositories on GitHub →
+           </a>
+         </div>
+       </div>
+diff --git a/src/components/Portfolio/Portfolio.module.scss b/src/components/Portfolio/Portfolio.module.scss
+index b90171f..6800a7d 100644
+--- a/src/components/Portfolio/Portfolio.module.scss
++++ b/src/components/Portfolio/Portfolio.module.scss
+@@ -1,251 +1,153 @@
+-.projectBlock {
+-  width: 72px;
+-  height: 72px;
+-  border-radius: 50%;
+-  background: linear-gradient(135deg, #EEC048 0%, #286F6C 100%);
+-  display: flex;
+-  align-items: center;
+-  justify-content: center;
+-  font-size: 2.1rem;
++@import "../../styles/contants.scss";
++
++.wrapper {
++  background: #fff;
++}
++
++.heading {
++  margin-bottom: 2rem;
++}
++
++.title {
++  font-size: 1.5rem;
+   font-weight: 700;
+-  color: #fff;
+-  box-shadow: 0 2px 12px rgba(40,111,108,0.13);
+-  margin-bottom: 12px;
+-  letter-spacing: 2px;
+-  transition: background 0.3s;
++  color: $primary;
++  margin: 0 0 0.4rem;
+ }
+ 
+-.projectsGrid {
+-  display: grid;
+-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+-  gap: 2.2rem;
+-  margin-top: 1.5rem;
++.subtitle {
++  font-size: 0.98rem;
++  color: $text-muted;
++  margin: 0;
+ }
+ 
++.grid {
++  display: grid;
++  grid-template-columns: 1fr;
++  gap: 2rem;
+ 
+-.projectCard {
+-  background: linear-gradient(135deg, #f8fafc 0%, #eaf6f5 100%);
+-  border-radius: 16px;
+-  box-shadow: 0 4px 24px rgba(40,111,108,0.09);
+-  border: 1.5px solid rgba(40,111,108,0.07);
+-  overflow: hidden;
++  @media (min-width: $sm) {
++    grid-template-columns: repeat(2, 1fr);
++  }
++
++  @media (min-width: $lg) {
++    grid-template-columns: repeat(3, 1fr);
++  }
++}
++
++.card {
+   display: flex;
+   flex-direction: column;
+-  transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+-  min-width: 0;
+-  padding: 18px 16px 16px 16px;
+-  align-items: center;
+-}
+-.projectCard:hover {
+-  transform: translateY(-6px) scale(1.06);
+-  box-shadow: 0 12px 40px rgba(40,111,108,0.18);
+-  border-color: #eec048;
++  background: #fff;
++  border: 1px solid $border-color;
++  border-radius: $radius-lg;
++  overflow: hidden;
++  transition: box-shadow $transition-fast, transform $transition-fast;
+ }
+ 
+-/* Убрать нижний оттенок/градиент для второй карточки (goit) */
+-.projectCard:nth-child(2) {
+-  background: linear-gradient(135deg, #f8fafc 0%, #eaf6f5 100%) !important;
+-  box-shadow: 0 4px 24px rgba(40,111,108,0.09) !important;
++.card:hover {
++  box-shadow: $shadow-md;
++  transform: translateY(-2px);
+ }
+ 
+-
+-.projectImgWrap {
++.thumbnail {
+   width: 100%;
+-  height: 120px;
+-  overflow: hidden;
+-  background: #e0f7fa;
+-  display: flex;
+-  align-items: center;
+-  justify-content: center;
+-  box-shadow: 0 2px 12px rgba(40,111,108,0.10);
+-}
+-.projectImg {
+-  width: 90%;
+-  height: 90%;
+-  object-fit: contain;
+-  border-radius: 12px;
+-  box-shadow: 0 1px 8px rgba(40,111,108,0.08);
++  aspect-ratio: 16 / 9;
++  object-fit: cover;
++  display: block;
++  background: $secondary-white;
++  border-bottom: 1px solid $border-color;
+ }
+-.projectInfo {
+-  padding: 0.7rem 0.7rem 0.6rem 0.7rem;
++
++.body {
+   display: flex;
+   flex-direction: column;
+-  gap: 0.5rem;
++  gap: 0.6rem;
++  padding: 1.25rem 1.4rem 1.5rem;
++  flex: 1;
+ }
+-.projectTitle {
+-  font-size: 1.18rem;
++
++.cardTitle {
++  font-size: 1.1rem;
+   font-weight: 700;
+-  color: #286F6C;
+-  margin-bottom: 0.2rem;
+-  font-family: 'Eudoxus Sans', 'Inter', sans-serif;
+-  text-align: center;
+-}
+-.projectStack {
+-  font-size: 0.98rem;
+-  color: #888;
+-  margin-bottom: 0.1rem;
+-  font-family: 'Inter', sans-serif;
+-  text-align: center;
+-}
+-.projectDesc {
+-  font-size: 1.01rem;
+-  color: #444;
+-  line-height: 1.6;
+-  margin-bottom: 0.4rem;
+-  text-align: center;
+-}
+-.projectLinks {
+-  display: flex;
+-  gap: 1rem;
+-  margin-top: 0.4rem;
+-}
+-.demoBtn, .codeBtn {
+-  padding: 0.45rem 1.1rem;
+-  border-radius: 18px;
+-  font-size: 0.97rem;
+-  font-weight: 600;
+-  background: #286F6C;
+-  color: #fff;
+-  text-decoration: none;
+-  transition: background 0.2s;
+-}
+-.demoBtn:hover, .codeBtn:hover {
+-  background: #EEC048;
+-  color: #286F6C;
++  color: $primary;
++  margin: 0;
+ }
+ 
+-.filtersBar {
+-  display: flex;
+-  justify-content: space-between;
+-  align-items: center;
+-  margin-top: 2.2rem;
+-  margin-bottom: 0.5rem;
+-  gap: 1.2rem;
+-  flex-wrap: wrap;
++.desc {
++  font-size: 0.93rem;
++  color: $text-body;
++  line-height: 1.55;
++  margin: 0;
++  flex: 1;
+ }
+-.filtersBtns {
++
++.stack {
+   display: flex;
+-  gap: 0.7rem;
+   flex-wrap: wrap;
++  gap: 0.4rem;
+ }
+-.filtersBtns button {
+-  padding: 0.38rem 1.1rem;
+-  border-radius: 16px;
+-  background: #f8fafc;
+-  color: #286F6C;
+-  font-weight: 600;
+-  border: 1.5px solid #e0e7ef;
+-  cursor: pointer;
+-  font-size: 0.97rem;
+-  transition: background 0.18s, color 0.18s;
+-}
+-.filtersBtns button:hover, .activeFilter {
+-  background: #286F6C;
+-  color: #fff;
++
++.stackTag {
++  font-size: 0.78rem;
++  font-weight: 500;
++  color: $primary;
++  background: $secondary-white;
++  padding: 0.25rem 0.6rem;
++  border-radius: $radius-sm;
+ }
+-.sortBar {
++
++.actions {
+   display: flex;
+-  align-items: center;
+   gap: 0.6rem;
+-  font-size: 0.97rem;
+-  color: #286F6C;
+-}
+-.subTitle {
+-  font-size: 1.08rem;
+-  color: #888;
+-  margin-top: 0.3rem;
+-  font-family: 'Inter', sans-serif;
++  margin-top: 0.4rem;
+ }
+-.githubProjects {
+-  margin-top: 2.5rem;
+-  text-align: center;
+-}
+-.allReposBtn {
+-  padding: 0.5rem 1.3rem;
+-  border-radius: 18px;
+-  background: linear-gradient(90deg, #EEC048, #229ED9, #286F6C, #EEC048);
+-  background-size: 300% 100%;
+-  background-position: 0% 50%;
+-  color: #fff;
+-  font-weight: 700;
+-  font-size: 1.01rem;
++
++.actionPrimary,
++.actionSecondary {
++  font-size: 0.87rem;
++  font-weight: 600;
+   text-decoration: none;
+-  box-shadow: 0 2px 12px rgba(40,111,108,0.08);
+-  transition: background-position 0.7s cubic-bezier(0.4,0,0.2,1), color 0.18s;
+-  border: none;
+-  outline: none;
++  padding: 0.5rem 1rem;
++  border-radius: $radius-md;
++  transition: background $transition-fast, color $transition-fast;
+ }
+-.allReposBtn:hover {
+-  background-position: 100% 50%;
++
++.actionPrimary {
++  background: $secondary;
+   color: #fff;
+ }
+ 
+-@media (max-width: 700px) {
+-  .projectsGrid {
+-    grid-template-columns: 1fr;
+-    gap: 1.2rem;
+-  }
+-  .projectImgWrap {
+-    height: 140px;
+-  }
+-  .filtersBar {
+-    flex-direction: column;
+-    align-items: flex-start;
+-    gap: 0.7rem;
+-  }
++.actionPrimary:hover,
++.actionPrimary:focus-visible {
++  background: darken($secondary, 8%);
+ }
+-@import "../../styles/contants.scss";
+ 
+-.wrapper {
+-  background: white;
+-  overflow: hidden;
+-  .container {
+-    flex-direction: column;
+-    gap: 1.2rem;
+-    .heading {
+-  width: 100%;
+-  display: flex;
+-  flex-direction: column;
+-  align-items: center;
+-  justify-content: center;
+-  margin-bottom: 2.2rem;
++.actionSecondary {
++  background: #fff;
++  color: $secondary;
++  border: 1px solid $secondary;
+ }
+ 
+-.primaryText {
+-  font-size: 2.1rem;
+-  font-weight: 800;
+-  color: #286F6C;
+-  text-align: center;
+-  letter-spacing: 1px;
+-  margin-bottom: 0.4rem;
+-  font-family: 'Eudoxus Sans', 'Inter', sans-serif;
++.actionSecondary:hover,
++.actionSecondary:focus-visible {
++  background: $secondary-white;
+ }
+ 
+-.subTitle {
+-  font-size: 1.15rem;
+-  color: #EEC048;
+-  text-align: center;
++.moreProjects {
++  display: flex;
++  justify-content: center;
++  margin-top: 2.5rem;
++}
++
++.moreLink {
++  font-size: 0.95rem;
+   font-weight: 600;
+-  margin-bottom: 0.2rem;
+-  font-family: 'Inter', sans-serif;
+-}
+-    }
+-
+-    .showCase {
+-      width: 100%;
+-      gap: 1rem;
+-      justify-content: space-around;
+-      flex-wrap: wrap;
+-      > img {
+-        @media (max-width: $sm) {
+-          width: 100%;
+-        }
+-        border-radius: 20px;
+-        max-width: 25rem;
+-        max-height: 18rem;
+-        box-shadow: 0px 21px 13px rgba(0, 0, 0, 13%);
+-        cursor: pointer;
+-      }
+-    }
+-  }
++  color: $secondary;
++  text-decoration: none;
++}
+ 
++.moreLink:hover,
++.moreLink:focus-visible {
++  text-decoration: underline;
++}
+diff --git a/src/components/Work/Work.jsx b/src/components/Work/Work.jsx
+index dda26ef..8c2e88b 100644
+--- a/src/components/Work/Work.jsx
++++ b/src/components/Work/Work.jsx
+@@ -5,26 +5,26 @@ const Work = () => {
+   return (
+     <section className={`paddings ${css.wrapper}`}>
+       <a className="anchor" id="work"></a>
+-      <div className={`flexCenter innerWidth ${css.container}`}> 
+-        <span className={css.workTitle}>Work Experience</span>
+-        <div className={css.workCardsWrapper}>
+-          {workExp.map((exp, i) => (
+-            <div
+-              className={css.workCard}
+-              key={i}
+-              style={{ cursor: "pointer" }}
+-              onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.03)'}
+-              onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+-            >
++      <div className="innerWidth">
++        <h2 className={css.workTitle}>Work Experience</h2>
++        <div className={css.workList}>
++          {workExp.map((exp) => (
++            <article className={css.workCard} key={exp.place}>
+               <div className={css.workCardHeader}>
+-                <span className={css.workCardPlace}>{exp.place}</span>
+-                <span className={css.workCardRole}>{exp.role}</span>
+-                <span className={css.workCardTenure}>{exp.tenure}</span>
++                <div>
++                  <h3 className={css.workCardRole}>{exp.role}</h3>
++                  <p className={css.workCardPlace}>{exp.place}</p>
++                </div>
++                <p className={css.workCardTenure}>{exp.tenure}</p>
+               </div>
+-              <div className={css.workCardDetail}>
+-                <p className={css.detailText}>{exp.detail}</p>
+-              </div>
+-            </div>
++              <ul className={css.pointsList}>
++                {exp.points.map((point) => (
++                  <li key={point} className={css.detailText}>
++                    {point}
++                  </li>
++                ))}
++              </ul>
++            </article>
+           ))}
+         </div>
+       </div>
+diff --git a/src/components/Work/Work.module.scss b/src/components/Work/Work.module.scss
+index 99d1e8e..6d5e092 100644
+--- a/src/components/Work/Work.module.scss
++++ b/src/components/Work/Work.module.scss
+@@ -1,353 +1,86 @@
+-.detailText {
+-  font-size: 1.01rem;
+-  color: #181818;
+-  line-height: 1.7;
+-  letter-spacing: 0.01em;
+-  word-spacing: 0.12em;
+-  margin: 0;
+-  font-family: 'Inter', 'Arial', sans-serif;
+-}
+-
+-
+-
+-.workCardsWrapper {
+-  width: 100%;
+-  max-width: 900px;
+-  margin: 32px auto 0 auto;
+-  display: flex;
+-  flex-wrap: wrap;
+-  gap: 1.6rem;
+-  justify-content: center;
+-  background: rgba(255, 255, 255, 0.22);
+-  border-radius: 32px;
+-  box-shadow: 0 8px 48px rgba(40, 111, 108, 0.13);
+-  padding: 38px 18px 38px 18px;
+-  border: 1.5px solid rgba(40, 111, 108, 0.13);
+-  backdrop-filter: blur(16px);
+-  -webkit-backdrop-filter: blur(16px);
+-  transition: box-shadow 0.28s, background 0.28s;
+-}
+-
+-
+-.workCard {
+-  background: linear-gradient(135deg, #f8fafc 0%, #eaf6f5 100%);
+-  border-radius: 16px;
+-  box-shadow: 0 4px 24px rgba(40,111,108,0.09);
+-  border: 1.5px solid rgba(40,111,108,0.07);
+-  overflow: hidden;
+-  display: flex;
+-  flex-direction: column;
+-  transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+-  min-width: 0;
+-  padding: 18px 16px 16px 16px;
+-  align-items: center;
+-  max-width: 400px;
+-  min-width: 260px;
+-}
+-.workCard:hover {
+-  transform: scale(1.03);
+-  box-shadow: 0 8px 24px rgba(40,111,108,0.13);
+-  border-color: #eec048;
+-}
+-
+-
+-.workCardHeader {
+-  display: flex;
+-  flex-direction: column;
+-  align-items: flex-start;
+-  padding: 0px 18px 12px 18px;
+-  font-family: 'Inter', 'Arial', sans-serif;
+-  gap: 0.5rem;
+-}
++@import "../../styles/contants.scss";
+ 
+-.workCardPlace,
+-.workCardRole,
+-.workCardTenure {
+-  padding: 3px 0;
++.wrapper {
++  background: #fafafa;
+ }
+ 
+ .workTitle {
+-  color: #286F6C;
+-  font-family: 'Eudoxus Sans', 'Inter', 'Arial', sans-serif;
+-  font-size: 2.1rem;
+-  font-weight: 800;
+-  letter-spacing: 0.01em;
+-  margin-bottom: 18px;
+-  text-shadow: 0 2px 12px rgba(40, 111, 108, 0.08);
+-  text-align: left;
+-}
+-.workCardPlace {
++  font-size: 1.5rem;
+   font-weight: 700;
+-  color: #286F6C;
+-  font-size: 1.08rem;
+-  margin-bottom: 0;
+-}
+-.workCardRole {
+-  font-weight: 600;
+-  color: #EEC048;
+-  font-size: 1.01rem;
+-  margin-bottom: 0;
+-}
+-.workCardTenure {
+-  font-size: 0.95rem;
+-  color: #888;
+-  font-weight: 500;
+-  margin-top: 0;
+-  white-space: nowrap;
++  color: $primary;
++  margin: 0 0 2rem;
+ }
+ 
+-.workCardDetail {
+-  padding: 18px 22px 16px 22px;
+-  font-size: 0.97rem;
+-  color: #444;
+-  background: #f8fafc;
+-  border-top: 1px solid #e0e0e0;
+-  line-height: 1.6;
+-  font-family: 'Inter', 'Arial', sans-serif;
+-  border-radius: 0 0 16px 16px;
+-  min-height: 40px;
+-  position: relative;
+-}
+-.tableWrapper {
+-  width: 100%;
++.workList {
+   display: flex;
+-  justify-content: center;
+-  margin-top: 32px;
++  flex-direction: column;
++  gap: 1.5rem;
++  max-width: 800px;
+ }
+ 
+-.table {
+-  width: 100%;
+-  max-width: 900px;
+-  border-collapse: separate;
+-  border-spacing: 0;
++.workCard {
+   background: #fff;
+-  box-shadow: 0 2px 16px rgba(40, 111, 108, 0.06);
+-  border-radius: 16px;
+-  overflow: hidden;
+-  font-family: 'Eudoxus Sans', 'Inter', 'Arial', sans-serif;
+-  position: relative;
+-}
+-
+-.table::before {
+-  content: "";
+-  position: absolute;
+-  left: 0;
+-  top: 0;
+-  width: 4px;
+-  height: 100%;
+-  background: linear-gradient(180deg, #286F6C 0%, #EEC048 100%);
+-  border-radius: 8px 0 0 8px;
+-  z-index: 2;
+-}
+-
+-.table th {
+-  background: #f8fafc;
+-  font-weight: 800;
+-  font-size: 1.08rem;
+-  padding: 18px 14px;
+-  color: #286F6C;
+-  border-bottom: 1px solid #e0e0e0;
+-  border-right: 1px solid #e0e0e0;
+-  letter-spacing: 0.5px;
+-  text-transform: uppercase;
+-}
+-.table th:last-child {
+-  border-right: none;
+-}
+-
+-.table td {
+-  padding: 16px 14px;
+-  font-size: 0.97rem;
+-  color: #222;
+-  vertical-align: top;
+-  border-bottom: 1px solid #f0f0f0;
+-  border-right: 1px solid #f0f0f0;
+-  font-family: 'Inter', 'Arial', sans-serif;
+-  background: transparent;
+-  transition: background 0.2s;
+-}
+-.table td:last-child {
+-  border-right: none;
+-}
+-
+-.table tr:last-child td {
+-  border-bottom: none;
+-}
+-
+-.table tbody tr:hover td {
+-  background: #f8fafc;
++  border: 1px solid $border-color;
++  border-left: 3px solid $secondary;
++  border-radius: $radius-lg;
++  padding: 1.75rem 2rem;
++  transition: box-shadow $transition-fast, border-color $transition-fast, transform $transition-fast;
+ }
+ 
+-.place {
+-  font-weight: 600;
+-  color: #286F6C;
+-}
+-.role {
+-  font-weight: 600;
+-  color: #EEC048;
+-}
+-.tenure {
+-  font-size: 0.95rem;
+-  color: #888;
+-}
+-.detail p {
+-  margin: 0;
+-  line-height: 1.5;
+-  color: #444;
++.workCard:hover {
++  box-shadow: $shadow-md;
++  border-left-color: $primary;
++  transform: translateY(-2px);
+ }
+ 
+-.tableWrapper {
+-  width: 100%;
++.workCardHeader {
+   display: flex;
+-  justify-content: center;
+-  margin-top: 32px;
+-}
+-
++  justify-content: space-between;
++  align-items: baseline;
++  gap: 1rem;
++  margin-bottom: 1.1rem;
++  flex-wrap: wrap;
+ 
+-.table {
+-  width: 100%;
+-  max-width: 900px;
+-  border-collapse: separate;
+-  border-spacing: 0;
+-  background: #fff;
+-  box-shadow: 0 2px 16px rgba(40, 111, 108, 0.06);
+-  border-radius: 16px;
+-  overflow: hidden;
+-  font-family: 'Eudoxus Sans', 'Inter', 'Arial', sans-serif;
++  @media (max-width: $sm) {
++    flex-direction: column;
++    align-items: flex-start;
++    gap: 0.3rem;
++  }
+ }
+ 
+-
+-.table th {
+-  background: #f8fafc;
++.workCardRole {
+   font-weight: 700;
+-  font-size: 1.02rem;
+-  padding: 16px 12px;
+-  color: #286F6C;
+-  border-bottom: 1px solid #e0e0e0;
+-  border-right: 1px solid #e0e0e0;
+-}
+-.table th:last-child {
+-  border-right: none;
+-}
+-
+-
+-.table td {
+-  padding: 16px 12px;
+-  font-size: 0.97rem;
+-  color: #222;
+-  vertical-align: top;
+-  border-bottom: 1px solid #f0f0f0;
+-  border-right: 1px solid #f0f0f0;
+-  font-family: 'Inter', 'Arial', sans-serif;
+-}
+-.table td:last-child {
+-  border-right: none;
++  color: $primary;
++  font-size: 1.1rem;
++  margin: 0;
+ }
+ 
+-.table tr:last-child td {
+-  border-bottom: none;
++.workCardPlace {
++  font-weight: 600;
++  color: $secondary;
++  font-size: 1rem;
++  margin: 0.2rem 0 0;
+ }
+ 
+-.place {
+-  font-weight: 500;
+-  color: #286F6C;
+-}
+-.role {
++.workCardTenure {
++  font-size: 0.85rem;
++  color: $text-muted;
+   font-weight: 500;
+-  color: #EEC048;
+-}
+-.tenure {
+-  font-size: 0.95rem;
+-  color: #888;
+-}
+-.detail p {
++  white-space: nowrap;
++  flex-shrink: 0;
+   margin: 0;
+-  line-height: 1.5;
+-  color: #444;
+ }
+ 
+-.divider {
+-  width: 100%;
+-  height: 1px;
+-  background: linear-gradient(90deg, #e0e0e0 0%, #f8fafc 100%);
+-  margin: 18px 0;
+-  border: none;
+-  opacity: 0.7;
++.pointsList {
++  margin: 0;
++  padding-left: 1.1rem;
++  display: flex;
++  flex-direction: column;
++  gap: 0.5rem;
+ }
+ 
+-
+-@import "../../styles/contants.scss";
+-
+-.wrapper {
+-  .container {
+-    flex-direction: column;
+-    gap: 1.2rem;
+-
+-    .experiences {
+-      width: 100%;
+-      flex-direction: column;
+-      gap: 0.8rem;
+-      position: relative;
+-
+-      .exp {
+-        width: 100%;
+-        justify-content: space-between;
+-        line-height: 28px;
+-        align-items: flex-start;
+-
+-        > div {
+-          flex: 1;
+-        }
+-
+-        .role {
+-          margin-left: 1rem;
+-        }
+-      }
+-
+-      .progressbar {
+-        @media (max-width: $sm), (max-width: $md) {
+-          left: 47%;
+-        }
+-        position: absolute;
+-        height: 100%;
+-        display: flex;
+-        flex-direction: column;
+-        gap: 0.7rem;
+-        left: 45%;
+-
+-        .line {
+-          position: absolute;
+-          height: 100%;
+-          width: 2px;
+-          background-image: linear-gradient(
+-            black 33%,
+-            rgba(255, 255, 255, 0) 0%
+-          );
+-          background-position: right;
+-          background-size: 2px 30px;
+-          background-repeat: repeat-y;
+-          left: 48%;
+-          z-index: 1;
+-          border-radius: 5px;
+-        }
+-
+-        > div {
+-          flex: 1;
+-          padding-top: 0.4rem;
+-          z-index: 2;
+-
+-          .circle {
+-            @media (max-width: $sm), (max-width: $md) {
+-            width: 0.6rem;
+-            height: 0.6rem;
+-            }
+-            border-radius: 50%;
+-            background: black;
+-            width: 1.2rem;
+-            height: 1.2rem;
+-          }
+-        }
+-      }
+-    }
+-  }
++.detailText {
++  font-size: 0.97rem;
++  color: $text-body;
++  line-height: 1.65;
+ }
+diff --git a/src/hooks/useOutsideAlerter.jsx b/src/hooks/useOutsideAlerter.jsx
+index e69de29..782d171 100644
+--- a/src/hooks/useOutsideAlerter.jsx
++++ b/src/hooks/useOutsideAlerter.jsx
+@@ -0,0 +1,23 @@
++import { useEffect } from "react";
++
++/**
++ * Calls `onOutsideClick` when a click/touch happens outside the element
++ * referenced by `ref`. Used to close the mobile nav when tapping elsewhere.
++ */
++const useOutsideAlerter = (ref, onOutsideClick) => {
++  useEffect(() => {
++    function handleClick(event) {
++      if (ref.current && !ref.current.contains(event.target)) {
++        onOutsideClick();
++      }
++    }
++    document.addEventListener("mousedown", handleClick);
++    document.addEventListener("touchstart", handleClick);
++    return () => {
++      document.removeEventListener("mousedown", handleClick);
++      document.removeEventListener("touchstart", handleClick);
++    };
++  }, [ref, onOutsideClick]);
++};
++
++export default useOutsideAlerter;
+diff --git a/src/styles/app.module.scss b/src/styles/app.module.scss
+index aeac93c..8403953 100644
+--- a/src/styles/app.module.scss
++++ b/src/styles/app.module.scss
+@@ -4,4 +4,23 @@
+     overflow-x: clip ;
+     position: relative;
+     color: $primary;
++}
++
++.skipLink {
++  position: absolute;
++  top: -48px;
++  left: 0.5rem;
++  z-index: 999;
++  background: $primary;
++  color: #fff;
++  padding: 0.6rem 1.1rem;
++  border-radius: $radius-md;
++  font-weight: 600;
++  font-size: 0.9rem;
++  text-decoration: none;
++  transition: top $transition-fast;
++}
++
++.skipLink:focus {
++  top: 0.5rem;
+ }
+\ No newline at end of file
+diff --git a/src/styles/contants.scss b/src/styles/contants.scss
+index fcaff36..cee0d2c 100644
+--- a/src/styles/contants.scss
++++ b/src/styles/contants.scss
+@@ -1,10 +1,28 @@
+-$sm :640px;
+-$md : 768px;
+-$lg : 1024px;
++$sm: 640px;
++$md: 768px;
++$lg: 1024px;
+ $xl: 1280px;
+ $xxl: 1536px;
++
+ $primary: #0D2F3F;
+ $secondary: #286F6C;
+ $secondary-white: #E7E7E7;
+ $green: #1ECD97;
+ $gray: #bbbbbb;
++
++// Shared design tokens — keep card/button/shadow styles consistent
++// across every section instead of each component picking its own values.
++$border-color: #eaeaea;
++
++$radius-sm: 6px;  // tags, chips
++$radius-md: 8px;  // buttons, links, small controls
++$radius-lg: 12px; // content cards (Work, Projects, Testimonials)
++
++$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
++$shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
++
++$transition-fast: 0.15s ease;
++
++// Text colors chosen to meet WCAG AA (4.5:1) on white backgrounds.
++$text-body: #374151;  // ~10.8:1 on white
++$text-muted: #4b5563; // ~7.5:1 on white
+diff --git a/src/styles/global.scss b/src/styles/global.scss
+index 667fe2b..29590df 100644
+--- a/src/styles/global.scss
++++ b/src/styles/global.scss
+@@ -5,126 +5,53 @@
+ }
+ 
+ .innerWidth {
++  width: 100%;
++
+   @media (min-width: $xxl) {
+     max-width: 1280px;
+     margin: auto;
+   }
+-
+-  width: 100%;
+ }
+ 
++// Shared section spacing — one consistent vertical rhythm site-wide
++// instead of each section defining its own padding scale.
+ .paddings {
+-  @media (min-width: $sm) {
+-    padding: 4rem;
+-  }
+-
++  padding: 3rem 1.5rem;
+ 
+-  @media (min-width: $xl),
+-  (min-width: $md) {
+-    padding-top: 2rem;
+-    padding-bottom: 2rem;
++  @media (min-width: $md) {
++    padding: 4rem 2rem;
+   }
+ 
+-  padding-left: 1.5rem;
+-  padding-right: 1.5rem;
+-  padding-top: 1.5rem;
+-  padding-bottom: 1.5rem;
+-}
+-
+-
+-
+-.xPaddings {
+-  @media (min-width: $sm) {
+-    padding-left: 4rem;
+-    padding-right: 4rem;
++  @media (min-width: $xl) {
++    padding: 5rem 2rem;
+   }
+-
+-  padding-left: 1.5rem;
+-  /* 24px */
+-  padding-right: 1.5rem;
+-  /* 24px */
+ }
+ 
+ .yPaddings {
+-  @media (min-width: $sm) {
+-    padding-top: 4rem;
+-    padding-bottom: 4rem;
+-  }
+-
+-  @media (min-width: $xl) {
+-    padding-top: 2rem;
+-    padding-bottom: 2rem;
+-  }
+-
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+-}
+ 
+-.topPaddings {
+-  @media (min-width : $sm) {
++  @media (min-width: $md) {
+     padding-top: 4rem;
+-  }
+-
+-  @media (min-width: $xl) {
+-    padding-top: 2rem;
+-  }
+-
+-  padding-top: 3rem;
+-}
+-
+-
+-.bottomPaddings {
+-  @media (min-width : $sm) {
+     padding-bottom: 4rem;
+   }
+ 
+   @media (min-width: $xl) {
+-    padding-bottom: 2rem;
++    padding-top: 5rem;
++    padding-bottom: 5rem;
+   }
+-
+-  padding-bottom: 3rem;
+ }
+ 
+-
+ .flexCenter {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+-.flexStart {
+-  display: flex;
+-  justify-content: start;
+-  align-items: center;
+-}
+-
+-.flexEnd {
+-  display: flex;
+-  justify-items: end;
+-}
+-
+-.primaryText {
+-  @media (max-width: $sm) {
+-    font-size: 2.5rem;
+-  }
+-  font-size: 3rem;
+-  font-weight: bold;
+-}
+-
+-.secondaryText {
+-  @media (max-width: $sm) {
+-    font-size: 1.1rem;
+-    line-height: 40px;
+-  }
+-  line-height: 50px;
+-  font-size: 1.3rem;
+-  font-weight: 500
+-}
+ .anchor {
+   display: block;
+   position: relative;
+   top: -100px;
+   visibility: hidden;
+   scroll-margin-top: 56px;
+-  background: linear-gradient(90deg, #f8fafc 0%, #eaf6f5 100%);
+-}
+\ No newline at end of file
++}
+diff --git a/src/utils/data.js b/src/utils/data.js
+index 8d17208..a73986a 100644
+--- a/src/utils/data.js
++++ b/src/utils/data.js
+@@ -1,4 +1,8 @@
+ 
++// Curated for the hero — the stack a recruiter needs to see in 5 seconds.
++// The fuller list below (techSkills) stays available for a future skills section.
++export const coreSkills = ["React", "TypeScript", "JavaScript", "Angular", "Redux", "Node.js", "SASS"];
++
+ export const techSkills = [
+   "React",
+   "JS",
+@@ -20,108 +24,108 @@ export const techSkills = [
+   "Maps API",
+   "Three.js"
+ ];
+-import { HiOutlineDesktopComputer } from "react-icons/hi";
+-import { CiServer } from 'react-icons/ci'
+-export const projectExperience = [
+-  {
+-    name: "Front-End Development",
+-    projects: 26,
+-    icon: HiOutlineDesktopComputer,
+-    bg: "#286F6C",
+-  },
+-  {
+-    name: "Full-Stack Development",
+-    projects: 10,
+-    icon: CiServer,
+-    bg: "#EEC048",
+-  },
+- 
+-];
+-
+-export const WhatDoIHelp = [
+-  "Hey! I'm Yevhenii — a creative React developer and certified Full Stack specialist with a passion for building beautiful, fast, and user-focused web apps.",
+-  "Diploma in Full Stack Development. 2+ years of hands-on experience: from minimalistic landing pages to complex international products. I love React, modern UI and clean, scalable code.",
+-  "My vibe: design with meaning, code with soul, always learning, always delivering. Let's make the web better together!"
+-];
++export const heroIntro =
++  "I build fast, accessible React applications — from minimalist landing pages to complex international products — with a Full Stack Development diploma and a focus on clean, scalable code.";
+ 
+ export const workExp = [
+   {
+     place: "GoIT School",
+     tenure: "Dec 2021 - Jan 2023 · 1 yr 2 mos",
+     role: "Full Stack Developer",
+-    detail:
+-      "At GoIT, I contributed to EdTech projects as a Full Stack Developer, focusing on React.js, JavaScript, HTML5, CSS, SASS, Redux, GitHub and REST API. My work helped deliver practical web solutions for students and supported the company's mission to advance IT education."
++    points: [
++      "Delivered practical web solutions for students on EdTech projects, supporting GoIT's mission to advance IT education.",
++      "Built features with React.js, JavaScript, Redux and REST APIs.",
++      "Worked across the stack with HTML5, CSS/SASS and Git-based workflows.",
++    ],
+   },
+   {
+     place: "Lentii ApS (Aarhus, Denmark)",
+     tenure: "Apr 2023 - Mar 2024 · 1 yr",
+     role: "Front-end Developer",
+-    detail:
+-      "I participated in the development and support of Lentii's web platform. My main tasks included building and improving user interfaces with Angular, TypeScript, Bootstrap, Tailwind CSS, and Bitbucket. I integrated REST APIs, optimized performance and regularly participated in code reviews."
++    points: [
++      "Built and improved the UI of Lentii's web platform using Angular, TypeScript, Bootstrap and Tailwind CSS.",
++      "Integrated REST APIs and optimized performance.",
++      "Took part in regular code reviews as part of the team's workflow.",
++    ],
+   },
+ ];
+ 
+-export const comments = [
++export const projects = [
+   {
+-    name: "Joseph (Ojiofor) Chikeme",
+-    post: "Front-end developer",
+-    comment:
+-      "Yevhenii Lymarenko is recommended as a skilled, talented, and hard-working front-end developer with experience in Angular, RxJs, Tailwind CSS, Bootstrap, Javascript, and Typescript. He is also knowledgeable in ReactJS and is constantly seeking ways to improve his knowledge. Excellent communication skills and being a good team player are qualities that are observed in him. He comes highly recommended anytime, any day.",
+-    img: "./images/joseph.jpeg",
++    title: "Chat App",
++    img: "./images/chat.png",
++    stack: ["React", "Firebase", "Firestore"],
++    desc: "Built a real-time chat application with authentication and live notifications.",
++    code: "https://github.com/YevheniiLi/chatapp",
++    demo: null,
+   },
+   {
+-  name: "Obinna Okoma",
+-  post: "UI/UX Product Designer",
+-  autoplay: true,
+-  autoplaySpeed: 1800,
+-    comment:
+-      "I am delighted to recommend Yevhenii as a highly skilled and dedicated Frontend Developer. During our time working together at Lentii ApS Denmark, I had the privilege of witnessing his exceptional technical expertise and unwavering commitment to delivering outstanding results. In conclusion, I endorse Yevhenii as a Frontend Developer. His exceptional skills, unwavering dedication, and positive attitude truly set him apart as a standout professional in his field.",
+-    img: "./images//obianna.png",
++    title: "Maps Service",
++    img: "./images/maps.jpeg",
++    stack: ["React", "Leaflet", "Google Maps API"],
++    desc: "Built an interactive maps app with geolocation, route planning and search.",
++    code: "https://github.com/YevheniiLi/google-maps-reactjs",
++    demo: null,
+   },
+   {
+-    name: "Julia Novak",
+-    post: "React developer",
+-    comment:
+-      "During our work together, Yevhenii proved to be a dedicated, responsible and hardworking person. He was always on time and available for calls whenever needed. In general, he is very friendly and welcoming so I had a nice experience working with Yevhenii on the same team.",
+-    img: "./images/yulia.jpeg",
++    title: "Movie Trailer",
++    img: "./images/trailer.jpeg",
++    stack: ["React", "Redux", "API", "Axios"],
++    desc: "Built a movie trailer browser with search, favorites and a Redux-powered UI.",
++    code: "https://github.com/YevheniiLi/trailer-now",
++    demo: null,
+   },
+-
+ ];
+ 
+-export const sliderSettings = {
+-  dots: true,
+-  infinite: false,
+-  speed: 1000,
+-  slidesToShow: 3,
+-  slidesToScroll: 1,
+-  initialSlide: 0,
+-  touchMove: true,
+-  useCSS: true,
++// PLACEHOLDER DATA — replace with your three real testimonials and the
++// recommendation letter. Nothing else needs to change; the component reads
++// straight from this file.
++//
++// Fields per testimonial:
++//   name     - required
++//   position - required (job title)
++//   company  - required
++//   avatar   - optional path, e.g. "./images/name.jpg" (falls back to initials if omitted)
++//   text     - required (the quote)
++//   link     - optional LinkedIn/company URL
++export const testimonials = [
++  {
++    name: "Placeholder Name One",
++    position: "Placeholder Position",
++    company: "Placeholder Company",
++    avatar: null,
++    text: "Placeholder testimonial text. Replace with the real quote from this person once you have it.",
++    link: null,
++    isPlaceholder: true,
++  },
++  {
++    name: "Placeholder Name Two",
++    position: "Placeholder Position",
++    company: "Placeholder Company",
++    avatar: null,
++    text: "Placeholder testimonial text. Replace with the real quote from this person once you have it.",
++    link: null,
++    isPlaceholder: true,
++  },
++  {
++    name: "Placeholder Name Three",
++    position: "Placeholder Position",
++    company: "Placeholder Company",
++    avatar: null,
++    text: "Placeholder testimonial text. Replace with the real quote from this person once you have it.",
++    link: null,
++    isPlaceholder: true,
++  },
++];
+ 
+-  responsive: [
+-    {
+-      breakpoint: 1024,
+-      settings: {
+-        slidesToShow: 3,
+-        slidesToScroll: 3,
+-        infinite: true,
+-        dots: true,
+-      },
+-    },
+-    {
+-      breakpoint: 1000,
+-      settings: {
+-        slidesToShow: 2,
+-        slidesToScroll: 2,
+-        initialSlide: 2,
+-      },
+-    },
+-    {
+-      breakpoint: 480,
+-      settings: {
+-        slidesToShow: 1,
+-        slidesToScroll: 1,
+-      },
+-    },
+-  ],
++// The recommendation letter from the founder/manager — shown as its own
++// highlighted section below the testimonial grid.
++export const featuredRecommendation = {
++  name: "Placeholder Founder Name",
++  position: "Founder & Manager",
++  company: "Placeholder Startup",
++  avatar: null,
++  text: "Placeholder recommendation letter text. Replace with the real letter once you have it — this card is styled to stand out from the regular testimonial cards above.",
++  link: null,
++  isPlaceholder: true,
+ };
+\ No newline at end of file
+diff --git a/src/utils/motion.js b/src/utils/motion.js
+deleted file mode 100644
+index 5348c3a..0000000
+--- a/src/utils/motion.js
++++ /dev/null
+@@ -1,197 +0,0 @@
+-export const headerVariants = {
+-    hidden: {
+-      opacity: 0,
+-      y: -50,
+-      transition: {
+-        type: "spring",
+-        stiffness: 300,
+-        damping: 140,
+-      },
+-    },
+-    show: {
+-      opacity: 1,
+-      y: 0,
+-      transition: {
+-        type: "spring",
+-        stiffness: 80,
+-        delay: 1,
+-      },
+-    },
+-  };
+-  
+-  export const slideIn = (direction, type, delay, duration) => ({
+-    hidden: {
+-      x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
+-      y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
+-    },
+-    show: {
+-      x: 0,
+-      y: 0,
+-      transition: {
+-        type,
+-        delay,
+-        duration,
+-        ease: "easeOut",
+-      },
+-    },
+-  });
+-  
+-  export const staggerContainer = (staggerChildren, delayChildren) => ({
+-    hidden: {},
+-    show: {
+-      transition: {
+-        staggerChildren,
+-        delayChildren,
+-      },
+-    },
+-  });
+-  
+-  export const textVariant = (delay) => ({
+-    hidden: {
+-      y: 50,
+-      opacity: 0,
+-    },
+-    show: {
+-      y: 0,
+-      opacity: 1,
+-      transition: {
+-        type: "spring",
+-        duration: 1.25,
+-        delay,
+-      },
+-    },
+-  });
+-  
+-  export const textContainer = {
+-    hidden: {
+-      opacity: 0,
+-    },
+-    show: (i = 1) => ({
+-      opacity: 1,
+-      transition: { staggerChildren: 0.1, delayChildren: i * 0.1 },
+-    }),
+-  };
+-  
+-  export const textVariant2 = {
+-    hidden: {
+-      opacity: 0,
+-      y: 20,
+-    },
+-    show: {
+-      opacity: 1,
+-      y: 0,
+-      transition: {
+-        type: "tween",
+-        ease: "easeIn",
+-      },
+-    },
+-  };
+-  
+-  export const fadeIn = (direction, type, delay, duration) => ({
+-    hidden: {
+-      x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
+-      y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
+-      opacity: 0,
+-    },
+-    show: {
+-      x: 0,
+-      y: 0,
+-      opacity: 1,
+-      transition: {
+-        type,
+-        delay,
+-        duration,
+-        ease: "easeOut",
+-      },
+-    },
+-  });
+-  
+-  export const planetVariants = (direction) => ({
+-    hidden: {
+-      x: direction === "left" ? "-100%" : "100%",
+-      rotate: 120,
+-    },
+-    show: {
+-      x: 0,
+-      rotate: 0,
+-      transition: {
+-        type: "spring",
+-        duration: 1.8,
+-        delay: 0.5,
+-      },
+-    },
+-  });
+-  
+-  export const zoomIn = (delay, duration) => ({
+-    hidden: {
+-      scale: 0,
+-      opacity: 0,
+-    },
+-    show: {
+-      scale: 1,
+-      opacity: 1,
+-      transition: {
+-        type: "tween",
+-        delay,
+-        duration,
+-        ease: "easeOut",
+-      },
+-    },
+-  });
+-  
+-  export const footerVariants = {
+-    hidden: {
+-      opacity: 0,
+-      y: 50,
+-      transition: {
+-        type: "spring",
+-        stiffness: 300,
+-        damping: 140,
+-      },
+-    },
+-    show: {
+-      opacity: 1,
+-      y: 0,
+-      transition: {
+-        type: "spring",
+-        stiffness: 80,
+-        delay: 0.5,
+-      },
+-    },
+-  };
+-  
+-  export const draw = {
+-    hidden: { pathLength: 0, opacity: 0 },
+-    visible: () => {
+-      const delay = 1.5;
+-      return {
+-        pathLength: 1,
+-        opacity: 1,
+-        transition: {
+-          pathLength: { delay, type: "spring", duration: 5, bounce: 0 },
+-          opacity: { delay, duration: 0.01 },
+-        },
+-      };
+-    },
+-  };
+-  
+-  export const staggerChildren = {
+-    hidden: { opacity: 0 },
+-    show: {
+-      opacity: 1,
+-      transition: {
+-        staggerChildren: 0.5,
+-      },
+-    },
+-  };
+-  
+-  export const listItem = {
+-    hidden: { opacity: 0 },
+-    show: { opacity: 1 },
+-  };
+-  
+-  export const getMenuStyles = (menuOpened) => {
+-    if (document.documentElement.clientWidth <= 640) {
+-      return { right: !menuOpened && "-100%" };
+-    }
+-  };
+\ No newline at end of file
